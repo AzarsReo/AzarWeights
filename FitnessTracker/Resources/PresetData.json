@@ -1,0 +1,4921 @@
+{
+  "exercises": [
+    {
+      "name": "Bench Press",
+      "muscleGroup": "Chest",
+      "equipment": "Barbell",
+      "movementPattern": "push",
+      "aliases": [
+        "Barbell Bench Press",
+        "Flat Bench"
+      ]
+    },
+    {
+      "name": "Incline Bench Press",
+      "muscleGroup": "Chest",
+      "equipment": "Barbell",
+      "movementPattern": "push",
+      "aliases": [
+        "Incline Barbell Press"
+      ]
+    },
+    {
+      "name": "Decline Bench Press",
+      "muscleGroup": "Chest",
+      "equipment": "Barbell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Close-Grip Bench Press",
+      "muscleGroup": "Chest",
+      "equipment": "Barbell",
+      "movementPattern": "push",
+      "aliases": [
+        "CGBP"
+      ]
+    },
+    {
+      "name": "Floor Press",
+      "muscleGroup": "Chest",
+      "equipment": "Barbell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Smith Machine Bench Press",
+      "muscleGroup": "Chest",
+      "equipment": "Smith Machine",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Smith Machine Incline Bench Press",
+      "muscleGroup": "Chest",
+      "equipment": "Smith Machine",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Dumbbell Chest Press",
+      "muscleGroup": "Chest",
+      "equipment": "Dumbbell",
+      "movementPattern": "push",
+      "aliases": [
+        "DB Bench Press"
+      ]
+    },
+    {
+      "name": "Incline Dumbbell Press",
+      "muscleGroup": "Chest",
+      "equipment": "Dumbbell",
+      "movementPattern": "push",
+      "aliases": [
+        "Incline DB Press"
+      ]
+    },
+    {
+      "name": "Dumbbell Decline Chest Press",
+      "muscleGroup": "Chest",
+      "equipment": "Dumbbell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Dumbbell Floor Press",
+      "muscleGroup": "Chest",
+      "equipment": "Dumbbell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Dumbbell Chest Fly",
+      "muscleGroup": "Chest",
+      "equipment": "Dumbbell",
+      "movementPattern": "push",
+      "aliases": [
+        "DB Fly"
+      ]
+    },
+    {
+      "name": "Dumbbell Pullover",
+      "muscleGroup": "Chest",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Cable Chest Press",
+      "muscleGroup": "Chest",
+      "equipment": "Cable",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Seated Cable Chest Fly",
+      "muscleGroup": "Chest",
+      "equipment": "Cable",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Standing Cable Chest Fly",
+      "muscleGroup": "Chest",
+      "equipment": "Cable",
+      "movementPattern": "push",
+      "aliases": [
+        "Cable Fly"
+      ]
+    },
+    {
+      "name": "Machine Chest Press",
+      "muscleGroup": "Chest",
+      "equipment": "Machine",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Machine Chest Fly",
+      "muscleGroup": "Chest",
+      "equipment": "Machine",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Pec Deck",
+      "muscleGroup": "Chest",
+      "equipment": "Machine",
+      "movementPattern": "push",
+      "aliases": [
+        "Pec Deck Fly"
+      ]
+    },
+    {
+      "name": "Push-Up",
+      "muscleGroup": "Chest",
+      "equipment": "Bodyweight",
+      "movementPattern": "push",
+      "aliases": [
+        "Push Up",
+        "Pushup"
+      ]
+    },
+    {
+      "name": "Incline Push-Up",
+      "muscleGroup": "Chest",
+      "equipment": "Bodyweight",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Decline Push-Up",
+      "muscleGroup": "Chest",
+      "equipment": "Bodyweight",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Close-Grip Push-Up",
+      "muscleGroup": "Chest",
+      "equipment": "Bodyweight",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Kneeling Push-Up",
+      "muscleGroup": "Chest",
+      "equipment": "Bodyweight",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Clap Push-Up",
+      "muscleGroup": "Chest",
+      "equipment": "Bodyweight",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Bar Dip",
+      "muscleGroup": "Chest",
+      "equipment": "Bodyweight",
+      "movementPattern": "push",
+      "aliases": [
+        "Dips",
+        "Parallel Bar Dip"
+      ]
+    },
+    {
+      "name": "Assisted Dip",
+      "muscleGroup": "Chest",
+      "equipment": "Machine",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Ring Dip",
+      "muscleGroup": "Chest",
+      "equipment": "Suspension",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Resistance Band Chest Fly",
+      "muscleGroup": "Chest",
+      "equipment": "Band",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Medicine Ball Chest Pass",
+      "muscleGroup": "Chest",
+      "equipment": "Medicine Ball",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Kettlebell Floor Press",
+      "muscleGroup": "Chest",
+      "equipment": "Kettlebell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Low Cable Crossover",
+      "muscleGroup": "Chest",
+      "equipment": "Cable",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "High Cable Crossover",
+      "muscleGroup": "Chest",
+      "equipment": "Cable",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Cable Crossover",
+      "muscleGroup": "Chest",
+      "equipment": "Cable",
+      "movementPattern": "push",
+      "aliases": [
+        "Mid Cable Crossover"
+      ]
+    },
+    {
+      "name": "Deadlift",
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "movementPattern": "hinge",
+      "aliases": [
+        "Conventional Deadlift"
+      ]
+    },
+    {
+      "name": "Sumo Deadlift",
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Trap Bar Deadlift",
+      "muscleGroup": "Back",
+      "equipment": "Trap Bar",
+      "movementPattern": "hinge",
+      "aliases": [
+        "Hex Bar Deadlift",
+        "High Handles",
+        "Low Handles"
+      ]
+    },
+    {
+      "name": "Deficit Deadlift",
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Pause Deadlift",
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Snatch Grip Deadlift",
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Stiff-Legged Deadlift",
+      "muscleGroup": "Hamstrings",
+      "equipment": "Barbell",
+      "movementPattern": "hinge",
+      "aliases": [
+        "SLDL"
+      ]
+    },
+    {
+      "name": "Rack Pull",
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Smith Machine Deadlift",
+      "muscleGroup": "Back",
+      "equipment": "Smith Machine",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Dumbbell Deadlift",
+      "muscleGroup": "Back",
+      "equipment": "Dumbbell",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Barbell Row",
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "movementPattern": "pull",
+      "aliases": [
+        "Bent-Over Row",
+        "Barbell Bent Over Row"
+      ]
+    },
+    {
+      "name": "Pendlay Row",
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "T-Bar Row",
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "movementPattern": "pull",
+      "aliases": [
+        "Landmine Row"
+      ]
+    },
+    {
+      "name": "Dumbbell Row",
+      "muscleGroup": "Back",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": [
+        "One-Arm Dumbbell Row",
+        "DB Row"
+      ]
+    },
+    {
+      "name": "Kroc Row",
+      "muscleGroup": "Back",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Chest-Supported Dumbbell Row",
+      "muscleGroup": "Back",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": [
+        "Incline DB Row"
+      ]
+    },
+    {
+      "name": "Gorilla Row",
+      "muscleGroup": "Back",
+      "equipment": "Kettlebell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Renegade Row",
+      "muscleGroup": "Back",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Seal Row",
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "One-Handed Cable Row",
+      "muscleGroup": "Back",
+      "equipment": "Cable",
+      "movementPattern": "pull",
+      "aliases": [
+        "Single-Arm Cable Row"
+      ]
+    },
+    {
+      "name": "Cable Close Grip Seated Row",
+      "muscleGroup": "Back",
+      "equipment": "Cable",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Cable Wide Grip Seated Row",
+      "muscleGroup": "Back",
+      "equipment": "Cable",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Seated Machine Row",
+      "muscleGroup": "Back",
+      "equipment": "Machine",
+      "movementPattern": "pull",
+      "aliases": [
+        "Chest-Supported Machine Row"
+      ]
+    },
+    {
+      "name": "Inverted Row",
+      "muscleGroup": "Back",
+      "equipment": "Bodyweight",
+      "movementPattern": "pull",
+      "aliases": [
+        "Bodyweight Row"
+      ]
+    },
+    {
+      "name": "Ring Row",
+      "muscleGroup": "Back",
+      "equipment": "Suspension",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Pull-Up",
+      "muscleGroup": "Back",
+      "equipment": "Bodyweight",
+      "movementPattern": "pull",
+      "aliases": [
+        "Pull Up",
+        "Pullup"
+      ]
+    },
+    {
+      "name": "Chin-Up",
+      "muscleGroup": "Back",
+      "equipment": "Bodyweight",
+      "movementPattern": "pull",
+      "aliases": [
+        "Chin Up"
+      ]
+    },
+    {
+      "name": "Close-Grip Chin-Up",
+      "muscleGroup": "Back",
+      "equipment": "Bodyweight",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Pull-Up With Neutral Grip",
+      "muscleGroup": "Back",
+      "equipment": "Bodyweight",
+      "movementPattern": "pull",
+      "aliases": [
+        "Neutral Grip Pull-Up"
+      ]
+    },
+    {
+      "name": "Ring Pull-Up",
+      "muscleGroup": "Back",
+      "equipment": "Suspension",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Assisted Pull-Up",
+      "muscleGroup": "Back",
+      "equipment": "Machine",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Assisted Chin-Up",
+      "muscleGroup": "Back",
+      "equipment": "Machine",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Lat Pulldown",
+      "muscleGroup": "Back",
+      "equipment": "Cable",
+      "movementPattern": "pull",
+      "aliases": [
+        "Lat Pull Down"
+      ]
+    },
+    {
+      "name": "Lat Pulldown Pronated",
+      "muscleGroup": "Back",
+      "equipment": "Cable",
+      "movementPattern": "pull",
+      "aliases": [
+        "Lat Pulldown With Pronated Grip"
+      ]
+    },
+    {
+      "name": "Lat Pulldown Supinated",
+      "muscleGroup": "Back",
+      "equipment": "Cable",
+      "movementPattern": "pull",
+      "aliases": [
+        "Reverse Grip Lat Pulldown"
+      ]
+    },
+    {
+      "name": "Lat Pulldown Neutral Grip",
+      "muscleGroup": "Back",
+      "equipment": "Cable",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Close-Grip Lat Pulldown",
+      "muscleGroup": "Back",
+      "equipment": "Cable",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "One-Handed Lat Pulldown",
+      "muscleGroup": "Back",
+      "equipment": "Cable",
+      "movementPattern": "pull",
+      "aliases": [
+        "Single-Arm Lat Pulldown"
+      ]
+    },
+    {
+      "name": "Machine Lat Pulldown",
+      "muscleGroup": "Back",
+      "equipment": "Machine",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Rope Pulldown",
+      "muscleGroup": "Back",
+      "equipment": "Cable",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Straight Arm Lat Pulldown",
+      "muscleGroup": "Back",
+      "equipment": "Cable",
+      "movementPattern": "pull",
+      "aliases": [
+        "Straight-Arm Pulldown"
+      ]
+    },
+    {
+      "name": "Barbell Shrug",
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Dumbbell Shrug",
+      "muscleGroup": "Back",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Back Extension",
+      "muscleGroup": "Back",
+      "equipment": "Machine",
+      "movementPattern": "hinge",
+      "aliases": [
+        "Hyperextension",
+        "45 Degree Back Extension"
+      ]
+    },
+    {
+      "name": "Good Morning",
+      "muscleGroup": "Hamstrings",
+      "equipment": "Barbell",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Superman Raise",
+      "muscleGroup": "Back",
+      "equipment": "Bodyweight",
+      "movementPattern": "hinge",
+      "aliases": [
+        "Superman"
+      ]
+    },
+    {
+      "name": "Clean",
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "movementPattern": "olympic",
+      "aliases": [
+        "Barbell Clean"
+      ]
+    },
+    {
+      "name": "Power Clean",
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "movementPattern": "olympic",
+      "aliases": []
+    },
+    {
+      "name": "Hang Clean",
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "movementPattern": "olympic",
+      "aliases": []
+    },
+    {
+      "name": "Snatch",
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "movementPattern": "olympic",
+      "aliases": []
+    },
+    {
+      "name": "Power Snatch",
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "movementPattern": "olympic",
+      "aliases": []
+    },
+    {
+      "name": "Hang Snatch",
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "movementPattern": "olympic",
+      "aliases": []
+    },
+    {
+      "name": "Clean and Jerk",
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "movementPattern": "olympic",
+      "aliases": [
+        "C&J"
+      ]
+    },
+    {
+      "name": "Hang Power Clean",
+      "muscleGroup": "Back",
+      "equipment": "Barbell",
+      "movementPattern": "olympic",
+      "aliases": []
+    },
+    {
+      "name": "Kettlebell Clean",
+      "muscleGroup": "Back",
+      "equipment": "Kettlebell",
+      "movementPattern": "olympic",
+      "aliases": []
+    },
+    {
+      "name": "Kettlebell Snatch",
+      "muscleGroup": "Back",
+      "equipment": "Kettlebell",
+      "movementPattern": "olympic",
+      "aliases": []
+    },
+    {
+      "name": "Kettlebell Swing",
+      "muscleGroup": "Hamstrings",
+      "equipment": "Kettlebell",
+      "movementPattern": "hinge",
+      "aliases": [
+        "KB Swing"
+      ]
+    },
+    {
+      "name": "One-Handed Kettlebell Swing",
+      "muscleGroup": "Hamstrings",
+      "equipment": "Kettlebell",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Kettlebell Row",
+      "muscleGroup": "Back",
+      "equipment": "Kettlebell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Kettlebell Clean & Press",
+      "muscleGroup": "Shoulders",
+      "equipment": "Kettlebell",
+      "movementPattern": "olympic",
+      "aliases": []
+    },
+    {
+      "name": "Kettlebell Clean & Jerk",
+      "muscleGroup": "Shoulders",
+      "equipment": "Kettlebell",
+      "movementPattern": "olympic",
+      "aliases": []
+    },
+    {
+      "name": "Muscle-Up (Bar)",
+      "muscleGroup": "Back",
+      "equipment": "Bodyweight",
+      "movementPattern": "pull",
+      "aliases": [
+        "Bar Muscle-Up"
+      ]
+    },
+    {
+      "name": "Muscle-Up (Rings)",
+      "muscleGroup": "Back",
+      "equipment": "Suspension",
+      "movementPattern": "pull",
+      "aliases": [
+        "Ring Muscle-Up"
+      ]
+    },
+    {
+      "name": "Chest to Bar",
+      "muscleGroup": "Back",
+      "equipment": "Bodyweight",
+      "movementPattern": "pull",
+      "aliases": [
+        "Chest-to-Bar Pull-Up"
+      ]
+    },
+    {
+      "name": "Wide-Grip Pull-Up",
+      "muscleGroup": "Back",
+      "equipment": "Bodyweight",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Weighted Pull-Up",
+      "muscleGroup": "Back",
+      "equipment": "Bodyweight",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Band-Assisted Pull-Up",
+      "muscleGroup": "Back",
+      "equipment": "Band",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Face Pull",
+      "muscleGroup": "Shoulders",
+      "equipment": "Cable",
+      "movementPattern": "pull",
+      "aliases": [
+        "Cable Face Pull"
+      ]
+    },
+    {
+      "name": "Overhead Press",
+      "muscleGroup": "Shoulders",
+      "equipment": "Barbell",
+      "movementPattern": "push",
+      "aliases": [
+        "OHP",
+        "Military Press",
+        "Barbell Overhead Press"
+      ]
+    },
+    {
+      "name": "Seated Barbell Overhead Press",
+      "muscleGroup": "Shoulders",
+      "equipment": "Barbell",
+      "movementPattern": "push",
+      "aliases": [
+        "Seated OHP"
+      ]
+    },
+    {
+      "name": "Push Press",
+      "muscleGroup": "Shoulders",
+      "equipment": "Barbell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Behind the Neck Press",
+      "muscleGroup": "Shoulders",
+      "equipment": "Barbell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Z Press",
+      "muscleGroup": "Shoulders",
+      "equipment": "Barbell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Dumbbell Shoulder Press",
+      "muscleGroup": "Shoulders",
+      "equipment": "Dumbbell",
+      "movementPattern": "push",
+      "aliases": [
+        "DB OHP"
+      ]
+    },
+    {
+      "name": "Seated Dumbbell Shoulder Press",
+      "muscleGroup": "Shoulders",
+      "equipment": "Dumbbell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Arnold Press",
+      "muscleGroup": "Shoulders",
+      "equipment": "Dumbbell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Machine Shoulder Press",
+      "muscleGroup": "Shoulders",
+      "equipment": "Machine",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Seated Smith Machine Shoulder Press",
+      "muscleGroup": "Shoulders",
+      "equipment": "Smith Machine",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Kettlebell Press",
+      "muscleGroup": "Shoulders",
+      "equipment": "Kettlebell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Seated Kettlebell Press",
+      "muscleGroup": "Shoulders",
+      "equipment": "Kettlebell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Kettlebell Push Press",
+      "muscleGroup": "Shoulders",
+      "equipment": "Kettlebell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Landmine Press",
+      "muscleGroup": "Shoulders",
+      "equipment": "Barbell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "One-Arm Landmine Press",
+      "muscleGroup": "Shoulders",
+      "equipment": "Barbell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Lateral Raise",
+      "muscleGroup": "Shoulders",
+      "equipment": "Dumbbell",
+      "movementPattern": "push",
+      "aliases": [
+        "Side Raise",
+        "Dumbbell Lateral Raise"
+      ]
+    },
+    {
+      "name": "Cable Lateral Raise",
+      "muscleGroup": "Shoulders",
+      "equipment": "Cable",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Machine Lateral Raise",
+      "muscleGroup": "Shoulders",
+      "equipment": "Machine",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Resistance Band Lateral Raise",
+      "muscleGroup": "Shoulders",
+      "equipment": "Band",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Dumbbell Front Raise",
+      "muscleGroup": "Shoulders",
+      "equipment": "Dumbbell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Barbell Front Raise",
+      "muscleGroup": "Shoulders",
+      "equipment": "Barbell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Cable Front Raise",
+      "muscleGroup": "Shoulders",
+      "equipment": "Cable",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Plate Front Raise",
+      "muscleGroup": "Shoulders",
+      "equipment": "Other",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Banded Face Pull",
+      "muscleGroup": "Shoulders",
+      "equipment": "Band",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Cable Rear Delt Row",
+      "muscleGroup": "Shoulders",
+      "equipment": "Cable",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Dumbbell Rear Delt Row",
+      "muscleGroup": "Shoulders",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Barbell Rear Delt Row",
+      "muscleGroup": "Shoulders",
+      "equipment": "Barbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Reverse Dumbbell Flyes",
+      "muscleGroup": "Shoulders",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": [
+        "Rear Delt Fly"
+      ]
+    },
+    {
+      "name": "Reverse Dumbbell Flyes on Incline Bench",
+      "muscleGroup": "Shoulders",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Reverse Cable Flyes",
+      "muscleGroup": "Shoulders",
+      "equipment": "Cable",
+      "movementPattern": "pull",
+      "aliases": [
+        "Cable Reverse Fly"
+      ]
+    },
+    {
+      "name": "Reverse Machine Fly",
+      "muscleGroup": "Shoulders",
+      "equipment": "Machine",
+      "movementPattern": "pull",
+      "aliases": [
+        "Reverse Pec Deck"
+      ]
+    },
+    {
+      "name": "Barbell Upright Row",
+      "muscleGroup": "Shoulders",
+      "equipment": "Barbell",
+      "movementPattern": "pull",
+      "aliases": [
+        "Upright Row"
+      ]
+    },
+    {
+      "name": "Band Pull-Apart",
+      "muscleGroup": "Shoulders",
+      "equipment": "Band",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Cuban Press",
+      "muscleGroup": "Shoulders",
+      "equipment": "Dumbbell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Band External/Internal Shoulder Rotation",
+      "muscleGroup": "Shoulders",
+      "equipment": "Band",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Cable External/Internal Shoulder Rotation",
+      "muscleGroup": "Shoulders",
+      "equipment": "Cable",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Dumbbell Horizontal External/Internal Rotation",
+      "muscleGroup": "Shoulders",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Lying Dumbbell External/Internal Rotation",
+      "muscleGroup": "Shoulders",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Handstand Push-Up",
+      "muscleGroup": "Shoulders",
+      "equipment": "Bodyweight",
+      "movementPattern": "push",
+      "aliases": [
+        "HSPU"
+      ]
+    },
+    {
+      "name": "Jerk",
+      "muscleGroup": "Shoulders",
+      "equipment": "Barbell",
+      "movementPattern": "olympic",
+      "aliases": []
+    },
+    {
+      "name": "Power Jerk",
+      "muscleGroup": "Shoulders",
+      "equipment": "Barbell",
+      "movementPattern": "olympic",
+      "aliases": []
+    },
+    {
+      "name": "Split Jerk",
+      "muscleGroup": "Shoulders",
+      "equipment": "Barbell",
+      "movementPattern": "olympic",
+      "aliases": []
+    },
+    {
+      "name": "Squat Jerk",
+      "muscleGroup": "Shoulders",
+      "equipment": "Barbell",
+      "movementPattern": "olympic",
+      "aliases": []
+    },
+    {
+      "name": "Devils Press",
+      "muscleGroup": "Shoulders",
+      "equipment": "Dumbbell",
+      "movementPattern": "push",
+      "aliases": [
+        "Devil Press"
+      ]
+    },
+    {
+      "name": "Turkish Get-Up",
+      "muscleGroup": "Shoulders",
+      "equipment": "Kettlebell",
+      "movementPattern": "core",
+      "aliases": [
+        "TGU"
+      ]
+    },
+    {
+      "name": "Kettlebell Halo",
+      "muscleGroup": "Shoulders",
+      "equipment": "Kettlebell",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Wall Walk",
+      "muscleGroup": "Shoulders",
+      "equipment": "Bodyweight",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Pike Push-Up",
+      "muscleGroup": "Shoulders",
+      "equipment": "Bodyweight",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Leaning Lateral Raise",
+      "muscleGroup": "Shoulders",
+      "equipment": "Dumbbell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Barbell Curl",
+      "muscleGroup": "Biceps",
+      "equipment": "Barbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "EZ Curl",
+      "muscleGroup": "Biceps",
+      "equipment": "EZ Bar",
+      "movementPattern": "pull",
+      "aliases": [
+        "EZ Bar Curl"
+      ]
+    },
+    {
+      "name": "Dumbbell Curl",
+      "muscleGroup": "Biceps",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": [
+        "DB Curl"
+      ]
+    },
+    {
+      "name": "Hammer Curl",
+      "muscleGroup": "Biceps",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Concentration Curl",
+      "muscleGroup": "Biceps",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Preacher Curl",
+      "muscleGroup": "Biceps",
+      "equipment": "EZ Bar",
+      "movementPattern": "pull",
+      "aliases": [
+        "Barbell Preacher Curl"
+      ]
+    },
+    {
+      "name": "Dumbbell Preacher Curl",
+      "muscleGroup": "Biceps",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Spider Curl",
+      "muscleGroup": "Biceps",
+      "equipment": "EZ Bar",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Incline Dumbbell Curl",
+      "muscleGroup": "Biceps",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Drag Curl",
+      "muscleGroup": "Biceps",
+      "equipment": "Barbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Bayesian Curl",
+      "muscleGroup": "Biceps",
+      "equipment": "Cable",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Reverse Barbell Curl",
+      "muscleGroup": "Biceps",
+      "equipment": "Barbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Reverse Dumbbell Curl",
+      "muscleGroup": "Biceps",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Zottman Curl",
+      "muscleGroup": "Biceps",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Cable Curl With Bar",
+      "muscleGroup": "Biceps",
+      "equipment": "Cable",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Cable Curl With Rope",
+      "muscleGroup": "Biceps",
+      "equipment": "Cable",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Machine Bicep Curl",
+      "muscleGroup": "Biceps",
+      "equipment": "Machine",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Kettlebell Curl",
+      "muscleGroup": "Biceps",
+      "equipment": "Kettlebell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Resistance Band Curl",
+      "muscleGroup": "Biceps",
+      "equipment": "Band",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Cross-Body Hammer Curl",
+      "muscleGroup": "Biceps",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Tricep Pushdown",
+      "muscleGroup": "Triceps",
+      "equipment": "Cable",
+      "movementPattern": "push",
+      "aliases": [
+        "Tricep Pushdown With Bar",
+        "Pushdown"
+      ]
+    },
+    {
+      "name": "Tricep Pushdown With Rope",
+      "muscleGroup": "Triceps",
+      "equipment": "Cable",
+      "movementPattern": "push",
+      "aliases": [
+        "Rope Pushdown"
+      ]
+    },
+    {
+      "name": "Overhead Cable Triceps Extension",
+      "muscleGroup": "Triceps",
+      "equipment": "Cable",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Crossbody Cable Triceps Extension",
+      "muscleGroup": "Triceps",
+      "equipment": "Cable",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Barbell Lying Triceps Extension",
+      "muscleGroup": "Triceps",
+      "equipment": "Barbell",
+      "movementPattern": "push",
+      "aliases": [
+        "Skull Crusher"
+      ]
+    },
+    {
+      "name": "Barbell Standing Triceps Extension",
+      "muscleGroup": "Triceps",
+      "equipment": "Barbell",
+      "movementPattern": "push",
+      "aliases": [
+        "French Press"
+      ]
+    },
+    {
+      "name": "EZ Bar Lying Triceps Extension",
+      "muscleGroup": "Triceps",
+      "equipment": "EZ Bar",
+      "movementPattern": "push",
+      "aliases": [
+        "EZ Skull Crusher"
+      ]
+    },
+    {
+      "name": "Dumbbell Lying Triceps Extension",
+      "muscleGroup": "Triceps",
+      "equipment": "Dumbbell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Dumbbell Standing Triceps Extension",
+      "muscleGroup": "Triceps",
+      "equipment": "Dumbbell",
+      "movementPattern": "push",
+      "aliases": [
+        "Overhead DB Extension"
+      ]
+    },
+    {
+      "name": "Tate Press",
+      "muscleGroup": "Triceps",
+      "equipment": "Dumbbell",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Bench Dip",
+      "muscleGroup": "Triceps",
+      "equipment": "Bodyweight",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Tricep Bodyweight Extension",
+      "muscleGroup": "Triceps",
+      "equipment": "Bodyweight",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Machine Overhead Triceps Extension",
+      "muscleGroup": "Triceps",
+      "equipment": "Machine",
+      "movementPattern": "push",
+      "aliases": []
+    },
+    {
+      "name": "Dumbbell Kickback",
+      "muscleGroup": "Triceps",
+      "equipment": "Dumbbell",
+      "movementPattern": "push",
+      "aliases": [
+        "Tricep Kickback"
+      ]
+    },
+    {
+      "name": "Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Barbell",
+      "movementPattern": "squat",
+      "aliases": [
+        "Back Squat",
+        "Barbell Squat"
+      ]
+    },
+    {
+      "name": "Front Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Barbell",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Pause Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Barbell",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Pin Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Barbell",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Box Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Barbell",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Goblet Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Dumbbell",
+      "movementPattern": "squat",
+      "aliases": [
+        "Kettlebell Goblet Squat"
+      ]
+    },
+    {
+      "name": "Zercher Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Barbell",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Safety Bar Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Barbell",
+      "movementPattern": "squat",
+      "aliases": [
+        "SSB Squat"
+      ]
+    },
+    {
+      "name": "Belt Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Machine",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Air Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Bodyweight",
+      "movementPattern": "squat",
+      "aliases": [
+        "Bodyweight Squat"
+      ]
+    },
+    {
+      "name": "Jump Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Bodyweight",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Bulgarian Split Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Dumbbell",
+      "movementPattern": "squat",
+      "aliases": [
+        "Rear Foot Elevated Split Squat"
+      ]
+    },
+    {
+      "name": "Leg Press",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Machine",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Vertical Leg Press",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Machine",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Hack Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Machine",
+      "movementPattern": "squat",
+      "aliases": [
+        "Hack Squat Machine"
+      ]
+    },
+    {
+      "name": "Barbell Hack Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Barbell",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Pendulum Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Machine",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Landmine Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Barbell",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Landmine Hack Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Barbell",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Smith Machine Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Smith Machine",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Smith Machine Front Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Smith Machine",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Smith Machine Bulgarian Split Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Smith Machine",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Dumbbell Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Dumbbell",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Kettlebell Front Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Kettlebell",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Barbell Lunge",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Barbell",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Dumbbell Lunge",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Dumbbell",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Walking Lunge",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Dumbbell",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Barbell Walking Lunge",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Barbell",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Reverse Lunge",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Dumbbell",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Barbell Reverse Lunge",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Barbell",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Body Weight Lunge",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Bodyweight",
+      "movementPattern": "squat",
+      "aliases": [
+        "Bodyweight Lunge"
+      ]
+    },
+    {
+      "name": "Side Lunges",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Bodyweight",
+      "movementPattern": "squat",
+      "aliases": [
+        "Lateral Lunge"
+      ]
+    },
+    {
+      "name": "Curtsy Lunge",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Dumbbell",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Jumping Lunge",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Bodyweight",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Step Up",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Dumbbell",
+      "movementPattern": "squat",
+      "aliases": [
+        "Step-Up"
+      ]
+    },
+    {
+      "name": "Leg Extension",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Machine",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "One-Legged Leg Extension",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Machine",
+      "movementPattern": "squat",
+      "aliases": [
+        "Single-Leg Extension"
+      ]
+    },
+    {
+      "name": "Standing Cable Leg Extension",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Cable",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Box Jump",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Bodyweight",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Depth Jump",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Bodyweight",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Lateral Bound",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Bodyweight",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Sled Push",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Other",
+      "movementPattern": "carry",
+      "aliases": []
+    },
+    {
+      "name": "Cossack Squat",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Bodyweight",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Tibialis Raise",
+      "muscleGroup": "Calves",
+      "equipment": "Other",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Heel Walk",
+      "muscleGroup": "Calves",
+      "equipment": "Bodyweight",
+      "movementPattern": "carry",
+      "aliases": []
+    },
+    {
+      "name": "Kettlebell Thrusters",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Kettlebell",
+      "movementPattern": "squat",
+      "aliases": [
+        "KB Thruster"
+      ]
+    },
+    {
+      "name": "Romanian Deadlift",
+      "muscleGroup": "Hamstrings",
+      "equipment": "Barbell",
+      "movementPattern": "hinge",
+      "aliases": [
+        "RDL"
+      ]
+    },
+    {
+      "name": "Smith Machine Romanian Deadlift",
+      "muscleGroup": "Hamstrings",
+      "equipment": "Smith Machine",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Dumbbell Romanian Deadlift",
+      "muscleGroup": "Hamstrings",
+      "equipment": "Dumbbell",
+      "movementPattern": "hinge",
+      "aliases": [
+        "DB RDL"
+      ]
+    },
+    {
+      "name": "Single Leg Romanian Deadlift",
+      "muscleGroup": "Hamstrings",
+      "equipment": "Dumbbell",
+      "movementPattern": "hinge",
+      "aliases": [
+        "SL RDL"
+      ]
+    },
+    {
+      "name": "Lying Leg Curl",
+      "muscleGroup": "Hamstrings",
+      "equipment": "Machine",
+      "movementPattern": "hinge",
+      "aliases": [
+        "Prone Leg Curl"
+      ]
+    },
+    {
+      "name": "Leg Curl",
+      "muscleGroup": "Hamstrings",
+      "equipment": "Machine",
+      "movementPattern": "hinge",
+      "aliases": [
+        "Seated or Lying Leg Curl"
+      ]
+    },
+    {
+      "name": "Seated Leg Curl",
+      "muscleGroup": "Hamstrings",
+      "equipment": "Machine",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Standing Leg Curl",
+      "muscleGroup": "Hamstrings",
+      "equipment": "Machine",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "One-Legged Lying Leg Curl",
+      "muscleGroup": "Hamstrings",
+      "equipment": "Machine",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "One-Legged Seated Leg Curl",
+      "muscleGroup": "Hamstrings",
+      "equipment": "Machine",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Bodyweight Leg Curl",
+      "muscleGroup": "Hamstrings",
+      "equipment": "Bodyweight",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Leg Curl On Ball",
+      "muscleGroup": "Hamstrings",
+      "equipment": "Other",
+      "movementPattern": "hinge",
+      "aliases": [
+        "Stability Ball Leg Curl"
+      ]
+    },
+    {
+      "name": "Nordic Hamstring Eccentric",
+      "muscleGroup": "Hamstrings",
+      "equipment": "Bodyweight",
+      "movementPattern": "hinge",
+      "aliases": [
+        "Nordic Curl"
+      ]
+    },
+    {
+      "name": "Reverse Nordic",
+      "muscleGroup": "Quadriceps",
+      "equipment": "Bodyweight",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Glute Ham Raise",
+      "muscleGroup": "Hamstrings",
+      "equipment": "Machine",
+      "movementPattern": "hinge",
+      "aliases": [
+        "GHR"
+      ]
+    },
+    {
+      "name": "Band Good Morning",
+      "muscleGroup": "Hamstrings",
+      "equipment": "Band",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Cable Pull Through",
+      "muscleGroup": "Glutes",
+      "equipment": "Cable",
+      "movementPattern": "hinge",
+      "aliases": [
+        "Pull-Through"
+      ]
+    },
+    {
+      "name": "Hip Thrust",
+      "muscleGroup": "Glutes",
+      "equipment": "Barbell",
+      "movementPattern": "hinge",
+      "aliases": [
+        "Barbell Hip Thrust"
+      ]
+    },
+    {
+      "name": "Hip Thrust Machine",
+      "muscleGroup": "Glutes",
+      "equipment": "Machine",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Smith Machine Hip Thrust",
+      "muscleGroup": "Glutes",
+      "equipment": "Smith Machine",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Glute Bridge",
+      "muscleGroup": "Glutes",
+      "equipment": "Bodyweight",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "One-Legged Glute Bridge",
+      "muscleGroup": "Glutes",
+      "equipment": "Bodyweight",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "One-Legged Hip Thrust",
+      "muscleGroup": "Glutes",
+      "equipment": "Barbell",
+      "movementPattern": "hinge",
+      "aliases": [
+        "Single-Leg Hip Thrust"
+      ]
+    },
+    {
+      "name": "Hip Thrust With Band Around Knees",
+      "muscleGroup": "Glutes",
+      "equipment": "Band",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Cable Glute Kickback",
+      "muscleGroup": "Glutes",
+      "equipment": "Cable",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Machine Glute Kickbacks",
+      "muscleGroup": "Glutes",
+      "equipment": "Machine",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Donkey Kicks",
+      "muscleGroup": "Glutes",
+      "equipment": "Bodyweight",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Fire Hydrants",
+      "muscleGroup": "Glutes",
+      "equipment": "Bodyweight",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Frog Pumps",
+      "muscleGroup": "Glutes",
+      "equipment": "Bodyweight",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Dumbbell Frog Pumps",
+      "muscleGroup": "Glutes",
+      "equipment": "Dumbbell",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Clamshells",
+      "muscleGroup": "Glutes",
+      "equipment": "Band",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Reverse Hyperextension",
+      "muscleGroup": "Glutes",
+      "equipment": "Machine",
+      "movementPattern": "hinge",
+      "aliases": [
+        "Reverse Hyper"
+      ]
+    },
+    {
+      "name": "Hip Abduction Machine",
+      "muscleGroup": "Glutes",
+      "equipment": "Machine",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Cable Machine Hip Abduction",
+      "muscleGroup": "Glutes",
+      "equipment": "Cable",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Hip Abduction Against Band",
+      "muscleGroup": "Glutes",
+      "equipment": "Band",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Standing Hip Abduction Against Band",
+      "muscleGroup": "Glutes",
+      "equipment": "Band",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Lateral Walk With Band",
+      "muscleGroup": "Glutes",
+      "equipment": "Band",
+      "movementPattern": "carry",
+      "aliases": [
+        "Monster Walk"
+      ]
+    },
+    {
+      "name": "Banded Side Kicks",
+      "muscleGroup": "Glutes",
+      "equipment": "Band",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Standing Glute Kickback in Machine",
+      "muscleGroup": "Glutes",
+      "equipment": "Machine",
+      "movementPattern": "hinge",
+      "aliases": []
+    },
+    {
+      "name": "Kettlebell Windmill",
+      "muscleGroup": "Glutes",
+      "equipment": "Kettlebell",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Calf Raise",
+      "muscleGroup": "Calves",
+      "equipment": "Machine",
+      "movementPattern": "squat",
+      "aliases": [
+        "Standing Calf Raise"
+      ]
+    },
+    {
+      "name": "Standing Calf Raise",
+      "muscleGroup": "Calves",
+      "equipment": "Machine",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Seated Calf Raise",
+      "muscleGroup": "Calves",
+      "equipment": "Machine",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Barbell Standing Calf Raise",
+      "muscleGroup": "Calves",
+      "equipment": "Barbell",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Calf Raise in Leg Press",
+      "muscleGroup": "Calves",
+      "equipment": "Machine",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Donkey Calf Raise",
+      "muscleGroup": "Calves",
+      "equipment": "Machine",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Heel Raise",
+      "muscleGroup": "Calves",
+      "equipment": "Bodyweight",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Eccentric Heel Drop",
+      "muscleGroup": "Calves",
+      "equipment": "Bodyweight",
+      "movementPattern": "squat",
+      "aliases": []
+    },
+    {
+      "name": "Crunch",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Sit-Up",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Bicycle Crunch",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Oblique Crunch",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Oblique Sit-Up",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Cable Crunch",
+      "muscleGroup": "Core",
+      "equipment": "Cable",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Machine Crunch",
+      "muscleGroup": "Core",
+      "equipment": "Machine",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Hanging Leg Raise",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Hanging Knee Raise",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Captain's Chair Knee/Leg Raise",
+      "muscleGroup": "Core",
+      "equipment": "Machine",
+      "movementPattern": "core",
+      "aliases": [
+        "Captain's Chair"
+      ]
+    },
+    {
+      "name": "Lying Leg Raise",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Dragon Flag",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Hollow Hold",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Hollow Body Crunch",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Dead Bug",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Dead Bug With Dumbbells",
+      "muscleGroup": "Core",
+      "equipment": "Dumbbell",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Plank",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Side Plank",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Plank with Leg Lifts",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Plank with Shoulder Taps",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Weighted Plank",
+      "muscleGroup": "Core",
+      "equipment": "Other",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Copenhagen Plank",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "L-Sit",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Ab Wheel Roll-Out",
+      "muscleGroup": "Core",
+      "equipment": "Other",
+      "movementPattern": "core",
+      "aliases": [
+        "Ab Wheel",
+        "Kneeling Rollout"
+      ]
+    },
+    {
+      "name": "Pallof Press",
+      "muscleGroup": "Core",
+      "equipment": "Cable",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Wood Chop",
+      "muscleGroup": "Core",
+      "equipment": "Cable",
+      "movementPattern": "core",
+      "aliases": [
+        "High-to-Low",
+        "Low-to-High",
+        "Horizontal",
+        "Cable Wood Chop",
+        "Band Wood Chop"
+      ]
+    },
+    {
+      "name": "Landmine Rotation",
+      "muscleGroup": "Core",
+      "equipment": "Barbell",
+      "movementPattern": "core",
+      "aliases": [
+        "Landmine Twist"
+      ]
+    },
+    {
+      "name": "Core Twist",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": [
+        "Russian Twist"
+      ]
+    },
+    {
+      "name": "Mountain Climbers",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Hanging Windshield Wiper",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Lying Windshield Wiper",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Dumbbell Side Bend",
+      "muscleGroup": "Core",
+      "equipment": "Dumbbell",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Kettlebell Plank Pull Through",
+      "muscleGroup": "Core",
+      "equipment": "Kettlebell",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Ball Slams",
+      "muscleGroup": "Core",
+      "equipment": "Medicine Ball",
+      "movementPattern": "core",
+      "aliases": [
+        "Medicine Ball Slam"
+      ]
+    },
+    {
+      "name": "Toes to Bar",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": [
+        "T2B"
+      ]
+    },
+    {
+      "name": "V-Up",
+      "muscleGroup": "Core",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Barbell Wrist Curl",
+      "muscleGroup": "Forearms",
+      "equipment": "Barbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Barbell Wrist Extension",
+      "muscleGroup": "Forearms",
+      "equipment": "Barbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Dumbbell Wrist Curl",
+      "muscleGroup": "Forearms",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Dumbbell Wrist Extension",
+      "muscleGroup": "Forearms",
+      "equipment": "Dumbbell",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Wrist Roller",
+      "muscleGroup": "Forearms",
+      "equipment": "Other",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Farmers Walk",
+      "muscleGroup": "Forearms",
+      "equipment": "Dumbbell",
+      "movementPattern": "carry",
+      "aliases": [
+        "Farmer's Carry",
+        "Farmer Walk"
+      ]
+    },
+    {
+      "name": "Bar Hang",
+      "muscleGroup": "Forearms",
+      "equipment": "Bodyweight",
+      "movementPattern": "carry",
+      "aliases": [
+        "Dead Hang"
+      ]
+    },
+    {
+      "name": "Plate Pinch",
+      "muscleGroup": "Forearms",
+      "equipment": "Other",
+      "movementPattern": "carry",
+      "aliases": []
+    },
+    {
+      "name": "Gripper",
+      "muscleGroup": "Forearms",
+      "equipment": "Other",
+      "movementPattern": "pull",
+      "aliases": [
+        "Hand Gripper"
+      ]
+    },
+    {
+      "name": "Fat Bar Deadlift",
+      "muscleGroup": "Forearms",
+      "equipment": "Barbell",
+      "movementPattern": "hinge",
+      "aliases": [
+        "Axle Deadlift"
+      ]
+    },
+    {
+      "name": "Towel Pull-Up",
+      "muscleGroup": "Forearms",
+      "equipment": "Bodyweight",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Suitcase Carry",
+      "muscleGroup": "Forearms",
+      "equipment": "Dumbbell",
+      "movementPattern": "carry",
+      "aliases": []
+    },
+    {
+      "name": "Lying Neck Curl",
+      "muscleGroup": "Neck",
+      "equipment": "Other",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Lying Neck Extension",
+      "muscleGroup": "Neck",
+      "equipment": "Other",
+      "movementPattern": "pull",
+      "aliases": []
+    },
+    {
+      "name": "Prone Neck Bridge",
+      "muscleGroup": "Neck",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Supine Neck Bridge",
+      "muscleGroup": "Neck",
+      "equipment": "Bodyweight",
+      "movementPattern": "core",
+      "aliases": []
+    },
+    {
+      "name": "Rowing Machine",
+      "muscleGroup": "Cardio",
+      "equipment": "Machine",
+      "movementPattern": "cardio",
+      "aliases": [
+        "Erg",
+        "Concept2"
+      ]
+    },
+    {
+      "name": "Stationary Bike",
+      "muscleGroup": "Cardio",
+      "equipment": "Machine",
+      "movementPattern": "cardio",
+      "aliases": [
+        "Exercise Bike"
+      ]
+    },
+    {
+      "name": "Treadmill Run",
+      "muscleGroup": "Cardio",
+      "equipment": "Machine",
+      "movementPattern": "cardio",
+      "aliases": []
+    },
+    {
+      "name": "Elliptical",
+      "muscleGroup": "Cardio",
+      "equipment": "Machine",
+      "movementPattern": "cardio",
+      "aliases": []
+    },
+    {
+      "name": "Stair Climber",
+      "muscleGroup": "Cardio",
+      "equipment": "Machine",
+      "movementPattern": "cardio",
+      "aliases": [
+        "Stairmaster"
+      ]
+    },
+    {
+      "name": "Jump Rope",
+      "muscleGroup": "Cardio",
+      "equipment": "Other",
+      "movementPattern": "cardio",
+      "aliases": [
+        "Skipping Rope"
+      ]
+    },
+    {
+      "name": "Battle Ropes",
+      "muscleGroup": "Cardio",
+      "equipment": "Other",
+      "movementPattern": "cardio",
+      "aliases": []
+    },
+    {
+      "name": "Sled Pull",
+      "muscleGroup": "Cardio",
+      "equipment": "Other",
+      "movementPattern": "carry",
+      "aliases": []
+    },
+    {
+      "name": "Assault Bike",
+      "muscleGroup": "Cardio",
+      "equipment": "Machine",
+      "movementPattern": "cardio",
+      "aliases": [
+        "Air Bike"
+      ]
+    },
+    {
+      "name": "SkiErg",
+      "muscleGroup": "Cardio",
+      "equipment": "Machine",
+      "movementPattern": "cardio",
+      "aliases": []
+    },
+    {
+      "name": "Burpees",
+      "muscleGroup": "Cardio",
+      "equipment": "Bodyweight",
+      "movementPattern": "cardio",
+      "aliases": []
+    }
+  ],
+  "splits": [
+    {
+      "name": "Push Pull Legs (3-day)",
+      "description": "Classic PPL run three days per week. Rotate Push, Pull, then Legs.",
+      "daysPerWeek": 3,
+      "templates": [
+        {
+          "name": "Push",
+          "exercises": [
+            {
+              "name": "Bench Press",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Overhead Press",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10,
+              "restSeconds": 120
+            },
+            {
+              "name": "Incline Dumbbell Press",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Cable Lateral Raise",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Tricep Pushdown With Rope",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            2
+          ]
+        },
+        {
+          "name": "Pull",
+          "exercises": [
+            {
+              "name": "Barbell Row",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Pull-Up",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 10,
+              "restSeconds": 120
+            },
+            {
+              "name": "Lat Pulldown Pronated",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Face Pull",
+              "targetSets": 3,
+              "targetRepsMin": 15,
+              "targetRepsMax": 20,
+              "restSeconds": 60
+            },
+            {
+              "name": "Barbell Curl",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            4
+          ]
+        },
+        {
+          "name": "Legs",
+          "exercises": [
+            {
+              "name": "Squat",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 180
+            },
+            {
+              "name": "Romanian Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10,
+              "restSeconds": 150
+            },
+            {
+              "name": "Leg Press",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Leg Extension",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Lying Leg Curl",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Standing Calf Raise",
+              "targetSets": 4,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 45
+            }
+          ],
+          "suggestedWeekdays": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Push Pull Legs (6-day)",
+      "description": "High-frequency PPL with A/B variants so you hit each pattern twice per week.",
+      "daysPerWeek": 6,
+      "templates": [
+        {
+          "name": "Push A",
+          "exercises": [
+            {
+              "name": "Bench Press",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Overhead Press",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10,
+              "restSeconds": 120
+            },
+            {
+              "name": "Incline Dumbbell Press",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Cable Lateral Raise",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Tricep Pushdown With Rope",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            2
+          ]
+        },
+        {
+          "name": "Pull A",
+          "exercises": [
+            {
+              "name": "Barbell Row",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Pull-Up",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 10,
+              "restSeconds": 120
+            },
+            {
+              "name": "Lat Pulldown Pronated",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Face Pull",
+              "targetSets": 3,
+              "targetRepsMin": 15,
+              "targetRepsMax": 20,
+              "restSeconds": 60
+            },
+            {
+              "name": "Barbell Curl",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            3
+          ]
+        },
+        {
+          "name": "Legs A",
+          "exercises": [
+            {
+              "name": "Squat",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 180
+            },
+            {
+              "name": "Romanian Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10,
+              "restSeconds": 150
+            },
+            {
+              "name": "Leg Press",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Leg Extension",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Lying Leg Curl",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Standing Calf Raise",
+              "targetSets": 4,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 45
+            }
+          ],
+          "suggestedWeekdays": [
+            4
+          ]
+        },
+        {
+          "name": "Push B",
+          "exercises": [
+            {
+              "name": "Overhead Press",
+              "targetSets": 4,
+              "targetRepsMin": 5,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Incline Bench Press",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Dumbbell Chest Press",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Lateral Raise",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Overhead Cable Triceps Extension",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            5
+          ]
+        },
+        {
+          "name": "Pull B",
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 4,
+              "targetRepsMax": 6,
+              "restSeconds": 180
+            },
+            {
+              "name": "Lat Pulldown",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Dumbbell Row",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Face Pull",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Hammer Curl",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            6
+          ]
+        },
+        {
+          "name": "Legs B",
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 4,
+              "targetRepsMax": 6,
+              "restSeconds": 180
+            },
+            {
+              "name": "Front Squat",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Bulgarian Split Squat",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Seated Leg Curl",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Hip Thrust",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Seated Calf Raise",
+              "targetSets": 4,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 45
+            }
+          ],
+          "suggestedWeekdays": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Upper / Lower",
+      "description": "Four-day upper/lower split with two unique days for each.",
+      "daysPerWeek": 4,
+      "templates": [
+        {
+          "name": "Upper A",
+          "exercises": [
+            {
+              "name": "Bench Press",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Barbell Row",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Overhead Press",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Lat Pulldown",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Barbell Curl",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12,
+              "restSeconds": 60
+            },
+            {
+              "name": "Tricep Pushdown",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            2
+          ]
+        },
+        {
+          "name": "Lower A",
+          "exercises": [
+            {
+              "name": "Squat",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 180
+            },
+            {
+              "name": "Romanian Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Leg Press",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Leg Curl",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Calf Raise",
+              "targetSets": 4,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 45
+            }
+          ],
+          "suggestedWeekdays": [
+            3
+          ]
+        },
+        {
+          "name": "Upper B",
+          "exercises": [
+            {
+              "name": "Incline Dumbbell Press",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Pull-Up",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Dumbbell Shoulder Press",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Cable Close Grip Seated Row",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Lateral Raise",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Face Pull",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            5
+          ]
+        },
+        {
+          "name": "Lower B",
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 4,
+              "targetRepsMax": 6,
+              "restSeconds": 180
+            },
+            {
+              "name": "Front Squat",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8
+            },
+            {
+              "name": "Hip Thrust",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Walking Lunge",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Seated Calf Raise",
+              "targetSets": 4,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 45
+            }
+          ],
+          "suggestedWeekdays": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Full Body",
+      "description": "Three non-competing full-body sessions. Efficient if you train 3 days a week.",
+      "daysPerWeek": 3,
+      "templates": [
+        {
+          "name": "Full Body A",
+          "exercises": [
+            {
+              "name": "Squat",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Bench Press",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Barbell Row",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8
+            },
+            {
+              "name": "Overhead Press",
+              "targetSets": 2,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Romanian Deadlift",
+              "targetSets": 2,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10
+            }
+          ],
+          "suggestedWeekdays": [
+            2
+          ]
+        },
+        {
+          "name": "Full Body B",
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 4,
+              "targetRepsMax": 6,
+              "restSeconds": 180
+            },
+            {
+              "name": "Incline Dumbbell Press",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Pull-Up",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Dumbbell Shoulder Press",
+              "targetSets": 2,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Walking Lunge",
+              "targetSets": 2,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            }
+          ],
+          "suggestedWeekdays": [
+            4
+          ]
+        },
+        {
+          "name": "Full Body C",
+          "exercises": [
+            {
+              "name": "Front Squat",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Overhead Press",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8
+            },
+            {
+              "name": "Dumbbell Row",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Hip Thrust",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Face Pull",
+              "targetSets": 2,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bro Split",
+      "description": "Five-day body-part split: Chest, Back, Shoulders, Legs, Arms.",
+      "daysPerWeek": 5,
+      "templates": [
+        {
+          "name": "Chest",
+          "exercises": [
+            {
+              "name": "Bench Press",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Incline Dumbbell Press",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Cable Chest Press",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Dumbbell Chest Fly",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Push-Up",
+              "targetSets": 2,
+              "targetRepsMin": 10,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            2
+          ]
+        },
+        {
+          "name": "Back",
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 4,
+              "targetRepsMax": 6,
+              "restSeconds": 180
+            },
+            {
+              "name": "Barbell Row",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8
+            },
+            {
+              "name": "Lat Pulldown",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Dumbbell Row",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Face Pull",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            3
+          ]
+        },
+        {
+          "name": "Shoulders",
+          "exercises": [
+            {
+              "name": "Overhead Press",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Dumbbell Shoulder Press",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Lateral Raise",
+              "targetSets": 4,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Face Pull",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Reverse Dumbbell Flyes",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            4
+          ]
+        },
+        {
+          "name": "Legs",
+          "exercises": [
+            {
+              "name": "Squat",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 180
+            },
+            {
+              "name": "Romanian Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Leg Press",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Leg Extension",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15
+            },
+            {
+              "name": "Lying Leg Curl",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15
+            },
+            {
+              "name": "Calf Raise",
+              "targetSets": 4,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 45
+            }
+          ],
+          "suggestedWeekdays": [
+            5
+          ]
+        },
+        {
+          "name": "Arms",
+          "exercises": [
+            {
+              "name": "Close-Grip Bench Press",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8
+            },
+            {
+              "name": "Barbell Curl",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Tricep Pushdown With Rope",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Incline Dumbbell Curl",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Overhead Cable Triceps Extension",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Hammer Curl",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PPLUL (5-day hybrid)",
+      "description": "Push, Pull, Legs, then extra Upper and Lower days for more volume.",
+      "daysPerWeek": 5,
+      "templates": [
+        {
+          "name": "Push",
+          "exercises": [
+            {
+              "name": "Bench Press",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Overhead Press",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10,
+              "restSeconds": 120
+            },
+            {
+              "name": "Incline Dumbbell Press",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Cable Lateral Raise",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Tricep Pushdown With Rope",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            2
+          ]
+        },
+        {
+          "name": "Pull",
+          "exercises": [
+            {
+              "name": "Barbell Row",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Pull-Up",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 10,
+              "restSeconds": 120
+            },
+            {
+              "name": "Lat Pulldown Pronated",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Face Pull",
+              "targetSets": 3,
+              "targetRepsMin": 15,
+              "targetRepsMax": 20,
+              "restSeconds": 60
+            },
+            {
+              "name": "Barbell Curl",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            3
+          ]
+        },
+        {
+          "name": "Legs",
+          "exercises": [
+            {
+              "name": "Squat",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 180
+            },
+            {
+              "name": "Romanian Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10,
+              "restSeconds": 150
+            },
+            {
+              "name": "Leg Press",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Leg Extension",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Lying Leg Curl",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Standing Calf Raise",
+              "targetSets": 4,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 45
+            }
+          ],
+          "suggestedWeekdays": [
+            4
+          ]
+        },
+        {
+          "name": "Upper",
+          "exercises": [
+            {
+              "name": "Incline Dumbbell Press",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Pull-Up",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Dumbbell Shoulder Press",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Cable Close Grip Seated Row",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Lateral Raise",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Face Pull",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            5
+          ]
+        },
+        {
+          "name": "Lower",
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 4,
+              "targetRepsMax": 6,
+              "restSeconds": 180
+            },
+            {
+              "name": "Front Squat",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8
+            },
+            {
+              "name": "Hip Thrust",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Walking Lunge",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Seated Calf Raise",
+              "targetSets": 4,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 45
+            }
+          ],
+          "suggestedWeekdays": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Arnold Split",
+      "description": "Chest/Back, Shoulders/Arms, Legs \u2014 each twice per week (6 days).",
+      "daysPerWeek": 6,
+      "templates": [
+        {
+          "name": "Chest/Back A",
+          "exercises": [
+            {
+              "name": "Bench Press",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Barbell Row",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Incline Dumbbell Press",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Pull-Up",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Dumbbell Chest Fly",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            2
+          ]
+        },
+        {
+          "name": "Shoulders/Arms A",
+          "exercises": [
+            {
+              "name": "Overhead Press",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Lateral Raise",
+              "targetSets": 4,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Barbell Curl",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Tricep Pushdown",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Face Pull",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            3
+          ]
+        },
+        {
+          "name": "Legs A",
+          "exercises": [
+            {
+              "name": "Squat",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 180
+            },
+            {
+              "name": "Romanian Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10,
+              "restSeconds": 150
+            },
+            {
+              "name": "Leg Press",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Leg Extension",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Lying Leg Curl",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Standing Calf Raise",
+              "targetSets": 4,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 45
+            }
+          ],
+          "suggestedWeekdays": [
+            4
+          ]
+        },
+        {
+          "name": "Chest/Back B",
+          "exercises": [
+            {
+              "name": "Incline Bench Press",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8
+            },
+            {
+              "name": "Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 4,
+              "targetRepsMax": 6,
+              "restSeconds": 180
+            },
+            {
+              "name": "Machine Chest Press",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Lat Pulldown",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Face Pull",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            5
+          ]
+        },
+        {
+          "name": "Shoulders/Arms B",
+          "exercises": [
+            {
+              "name": "Dumbbell Shoulder Press",
+              "targetSets": 4,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Cable Lateral Raise",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Incline Dumbbell Curl",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Overhead Cable Triceps Extension",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Hammer Curl",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            6
+          ]
+        },
+        {
+          "name": "Legs B",
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 4,
+              "targetRepsMax": 6,
+              "restSeconds": 180
+            },
+            {
+              "name": "Front Squat",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Bulgarian Split Squat",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Seated Leg Curl",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Hip Thrust",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Seated Calf Raise",
+              "targetSets": 4,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 45
+            }
+          ],
+          "suggestedWeekdays": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PHUL",
+      "description": "Power Hypertrophy Upper Lower: two heavy power days and two hypertrophy days.",
+      "daysPerWeek": 4,
+      "templates": [
+        {
+          "name": "Upper Power",
+          "exercises": [
+            {
+              "name": "Bench Press",
+              "targetSets": 5,
+              "targetRepsMin": 3,
+              "targetRepsMax": 5,
+              "restSeconds": 180
+            },
+            {
+              "name": "Barbell Row",
+              "targetSets": 5,
+              "targetRepsMin": 3,
+              "targetRepsMax": 5,
+              "restSeconds": 180
+            },
+            {
+              "name": "Overhead Press",
+              "targetSets": 4,
+              "targetRepsMin": 3,
+              "targetRepsMax": 5,
+              "restSeconds": 150
+            },
+            {
+              "name": "Weighted Pull-Up",
+              "targetSets": 3,
+              "targetRepsMin": 4,
+              "targetRepsMax": 6,
+              "restSeconds": 150
+            }
+          ],
+          "suggestedWeekdays": [
+            2
+          ]
+        },
+        {
+          "name": "Lower Power",
+          "exercises": [
+            {
+              "name": "Squat",
+              "targetSets": 5,
+              "targetRepsMin": 3,
+              "targetRepsMax": 5,
+              "restSeconds": 180
+            },
+            {
+              "name": "Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 3,
+              "targetRepsMax": 5,
+              "restSeconds": 180
+            },
+            {
+              "name": "Front Squat",
+              "targetSets": 3,
+              "targetRepsMin": 4,
+              "targetRepsMax": 6,
+              "restSeconds": 150
+            },
+            {
+              "name": "Barbell Walking Lunge",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8
+            }
+          ],
+          "suggestedWeekdays": [
+            3
+          ]
+        },
+        {
+          "name": "Upper Hypertrophy",
+          "exercises": [
+            {
+              "name": "Incline Dumbbell Press",
+              "targetSets": 4,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Lat Pulldown",
+              "targetSets": 4,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Dumbbell Shoulder Press",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Cable Close Grip Seated Row",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Lateral Raise",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Barbell Curl",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12,
+              "restSeconds": 60
+            },
+            {
+              "name": "Tricep Pushdown",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            5
+          ]
+        },
+        {
+          "name": "Lower Hypertrophy",
+          "exercises": [
+            {
+              "name": "Leg Press",
+              "targetSets": 4,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Romanian Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Bulgarian Split Squat",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Leg Extension",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15
+            },
+            {
+              "name": "Lying Leg Curl",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15
+            },
+            {
+              "name": "Hip Thrust",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Calf Raise",
+              "targetSets": 4,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 45
+            }
+          ],
+          "suggestedWeekdays": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PHAT",
+      "description": "Power Hypertrophy Adaptive Training: two power days plus three hypertrophy days.",
+      "daysPerWeek": 5,
+      "templates": [
+        {
+          "name": "Upper Power",
+          "exercises": [
+            {
+              "name": "Bench Press",
+              "targetSets": 5,
+              "targetRepsMin": 3,
+              "targetRepsMax": 5,
+              "restSeconds": 180
+            },
+            {
+              "name": "Barbell Row",
+              "targetSets": 5,
+              "targetRepsMin": 3,
+              "targetRepsMax": 5,
+              "restSeconds": 180
+            },
+            {
+              "name": "Overhead Press",
+              "targetSets": 4,
+              "targetRepsMin": 3,
+              "targetRepsMax": 5,
+              "restSeconds": 150
+            },
+            {
+              "name": "Weighted Pull-Up",
+              "targetSets": 3,
+              "targetRepsMin": 4,
+              "targetRepsMax": 6,
+              "restSeconds": 150
+            }
+          ],
+          "suggestedWeekdays": [
+            2
+          ]
+        },
+        {
+          "name": "Lower Power",
+          "exercises": [
+            {
+              "name": "Squat",
+              "targetSets": 5,
+              "targetRepsMin": 3,
+              "targetRepsMax": 5,
+              "restSeconds": 180
+            },
+            {
+              "name": "Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 3,
+              "targetRepsMax": 5,
+              "restSeconds": 180
+            },
+            {
+              "name": "Front Squat",
+              "targetSets": 3,
+              "targetRepsMin": 4,
+              "targetRepsMax": 6,
+              "restSeconds": 150
+            },
+            {
+              "name": "Barbell Walking Lunge",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8
+            }
+          ],
+          "suggestedWeekdays": [
+            3
+          ]
+        },
+        {
+          "name": "Back/Shoulders",
+          "exercises": [
+            {
+              "name": "Barbell Row",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8
+            },
+            {
+              "name": "Pull-Up",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Overhead Press",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8
+            },
+            {
+              "name": "Lat Pulldown",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Lateral Raise",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Face Pull",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            4
+          ]
+        },
+        {
+          "name": "Lower Hypertrophy",
+          "exercises": [
+            {
+              "name": "Leg Press",
+              "targetSets": 4,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Romanian Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Bulgarian Split Squat",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Leg Extension",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15
+            },
+            {
+              "name": "Lying Leg Curl",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15
+            },
+            {
+              "name": "Hip Thrust",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Calf Raise",
+              "targetSets": 4,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 45
+            }
+          ],
+          "suggestedWeekdays": [
+            5
+          ]
+        },
+        {
+          "name": "Chest/Arms",
+          "exercises": [
+            {
+              "name": "Bench Press",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Incline Dumbbell Press",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Close-Grip Bench Press",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8
+            },
+            {
+              "name": "Barbell Curl",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Tricep Pushdown With Rope",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Hammer Curl",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Upper/Lower/Push/Pull/Legs",
+      "description": "Five-day hybrid: Upper, Lower, then a PPL wave for extra frequency.",
+      "daysPerWeek": 5,
+      "templates": [
+        {
+          "name": "Upper",
+          "exercises": [
+            {
+              "name": "Bench Press",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Barbell Row",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Overhead Press",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Lat Pulldown",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Barbell Curl",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12,
+              "restSeconds": 60
+            },
+            {
+              "name": "Tricep Pushdown",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            2
+          ]
+        },
+        {
+          "name": "Lower",
+          "exercises": [
+            {
+              "name": "Squat",
+              "targetSets": 4,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 180
+            },
+            {
+              "name": "Romanian Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Leg Press",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Leg Curl",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Calf Raise",
+              "targetSets": 4,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 45
+            }
+          ],
+          "suggestedWeekdays": [
+            3
+          ]
+        },
+        {
+          "name": "Push",
+          "exercises": [
+            {
+              "name": "Overhead Press",
+              "targetSets": 4,
+              "targetRepsMin": 5,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Incline Bench Press",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Dumbbell Chest Press",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Lateral Raise",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Overhead Cable Triceps Extension",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            4
+          ]
+        },
+        {
+          "name": "Pull",
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 4,
+              "targetRepsMax": 6,
+              "restSeconds": 180
+            },
+            {
+              "name": "Lat Pulldown",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Dumbbell Row",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Face Pull",
+              "targetSets": 3,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 60
+            },
+            {
+              "name": "Hammer Curl",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12,
+              "restSeconds": 60
+            }
+          ],
+          "suggestedWeekdays": [
+            5
+          ]
+        },
+        {
+          "name": "Legs",
+          "exercises": [
+            {
+              "name": "Deadlift",
+              "targetSets": 3,
+              "targetRepsMin": 4,
+              "targetRepsMax": 6,
+              "restSeconds": 180
+            },
+            {
+              "name": "Front Squat",
+              "targetSets": 3,
+              "targetRepsMin": 6,
+              "targetRepsMax": 8,
+              "restSeconds": 150
+            },
+            {
+              "name": "Bulgarian Split Squat",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 10
+            },
+            {
+              "name": "Seated Leg Curl",
+              "targetSets": 3,
+              "targetRepsMin": 10,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Hip Thrust",
+              "targetSets": 3,
+              "targetRepsMin": 8,
+              "targetRepsMax": 12
+            },
+            {
+              "name": "Seated Calf Raise",
+              "targetSets": 4,
+              "targetRepsMin": 12,
+              "targetRepsMax": 15,
+              "restSeconds": 45
+            }
+          ],
+          "suggestedWeekdays": [
+            6
+          ]
+        }
+      ]
+    }
+  ],
+  "starterTemplates": [
+    {
+      "name": "Push Day",
+      "exercises": [
+        {
+          "name": "Bench Press",
+          "targetSets": 4,
+          "targetRepsMin": 6,
+          "targetRepsMax": 8,
+          "restSeconds": 150
+        },
+        {
+          "name": "Overhead Press",
+          "targetSets": 3,
+          "targetRepsMin": 8,
+          "targetRepsMax": 10,
+          "restSeconds": 120
+        },
+        {
+          "name": "Incline Dumbbell Press",
+          "targetSets": 3,
+          "targetRepsMin": 10,
+          "targetRepsMax": 12
+        },
+        {
+          "name": "Lateral Raise",
+          "targetSets": 3,
+          "targetRepsMin": 12,
+          "targetRepsMax": 15,
+          "restSeconds": 60
+        },
+        {
+          "name": "Tricep Pushdown",
+          "targetSets": 3,
+          "targetRepsMin": 12,
+          "targetRepsMax": 15,
+          "restSeconds": 60
+        }
+      ]
+    },
+    {
+      "name": "Pull Day",
+      "exercises": [
+        {
+          "name": "Barbell Row",
+          "targetSets": 4,
+          "targetRepsMin": 6,
+          "targetRepsMax": 8,
+          "restSeconds": 150
+        },
+        {
+          "name": "Pull-Up",
+          "targetSets": 3,
+          "targetRepsMin": 6,
+          "targetRepsMax": 10,
+          "restSeconds": 120
+        },
+        {
+          "name": "Lat Pulldown",
+          "targetSets": 3,
+          "targetRepsMin": 10,
+          "targetRepsMax": 12
+        },
+        {
+          "name": "Face Pull",
+          "targetSets": 3,
+          "targetRepsMin": 15,
+          "targetRepsMax": 20,
+          "restSeconds": 60
+        },
+        {
+          "name": "Barbell Curl",
+          "targetSets": 3,
+          "targetRepsMin": 10,
+          "targetRepsMax": 12,
+          "restSeconds": 60
+        }
+      ]
+    },
+    {
+      "name": "Leg Day",
+      "exercises": [
+        {
+          "name": "Squat",
+          "targetSets": 4,
+          "targetRepsMin": 6,
+          "targetRepsMax": 8,
+          "restSeconds": 180
+        },
+        {
+          "name": "Romanian Deadlift",
+          "targetSets": 3,
+          "targetRepsMin": 8,
+          "targetRepsMax": 10,
+          "restSeconds": 150
+        },
+        {
+          "name": "Leg Press",
+          "targetSets": 3,
+          "targetRepsMin": 10,
+          "targetRepsMax": 12
+        },
+        {
+          "name": "Leg Extension",
+          "targetSets": 3,
+          "targetRepsMin": 12,
+          "targetRepsMax": 15,
+          "restSeconds": 60
+        },
+        {
+          "name": "Lying Leg Curl",
+          "targetSets": 3,
+          "targetRepsMin": 12,
+          "targetRepsMax": 15,
+          "restSeconds": 60
+        },
+        {
+          "name": "Calf Raise",
+          "targetSets": 4,
+          "targetRepsMin": 12,
+          "targetRepsMax": 15,
+          "restSeconds": 45
+        }
+      ]
+    },
+    {
+      "name": "Upper Body",
+      "exercises": [
+        {
+          "name": "Bench Press",
+          "targetSets": 4,
+          "targetRepsMin": 6,
+          "targetRepsMax": 8,
+          "restSeconds": 150
+        },
+        {
+          "name": "Barbell Row",
+          "targetSets": 4,
+          "targetRepsMin": 6,
+          "targetRepsMax": 8,
+          "restSeconds": 150
+        },
+        {
+          "name": "Overhead Press",
+          "targetSets": 3,
+          "targetRepsMin": 8,
+          "targetRepsMax": 10
+        },
+        {
+          "name": "Lat Pulldown",
+          "targetSets": 3,
+          "targetRepsMin": 8,
+          "targetRepsMax": 12
+        },
+        {
+          "name": "Barbell Curl",
+          "targetSets": 3,
+          "targetRepsMin": 10,
+          "targetRepsMax": 12,
+          "restSeconds": 60
+        },
+        {
+          "name": "Tricep Pushdown",
+          "targetSets": 3,
+          "targetRepsMin": 10,
+          "targetRepsMax": 12,
+          "restSeconds": 60
+        }
+      ]
+    },
+    {
+      "name": "Lower Body",
+      "exercises": [
+        {
+          "name": "Squat",
+          "targetSets": 4,
+          "targetRepsMin": 6,
+          "targetRepsMax": 8,
+          "restSeconds": 180
+        },
+        {
+          "name": "Romanian Deadlift",
+          "targetSets": 3,
+          "targetRepsMin": 8,
+          "targetRepsMax": 10
+        },
+        {
+          "name": "Leg Press",
+          "targetSets": 3,
+          "targetRepsMin": 10,
+          "targetRepsMax": 12
+        },
+        {
+          "name": "Leg Curl",
+          "targetSets": 3,
+          "targetRepsMin": 10,
+          "targetRepsMax": 12
+        },
+        {
+          "name": "Calf Raise",
+          "targetSets": 4,
+          "targetRepsMin": 12,
+          "targetRepsMax": 15,
+          "restSeconds": 45
+        }
+      ]
+    },
+    {
+      "name": "Full Body",
+      "exercises": [
+        {
+          "name": "Squat",
+          "targetSets": 3,
+          "targetRepsMin": 6,
+          "targetRepsMax": 8,
+          "restSeconds": 150
+        },
+        {
+          "name": "Bench Press",
+          "targetSets": 3,
+          "targetRepsMin": 6,
+          "targetRepsMax": 8,
+          "restSeconds": 150
+        },
+        {
+          "name": "Barbell Row",
+          "targetSets": 3,
+          "targetRepsMin": 6,
+          "targetRepsMax": 8
+        },
+        {
+          "name": "Overhead Press",
+          "targetSets": 2,
+          "targetRepsMin": 8,
+          "targetRepsMax": 10
+        },
+        {
+          "name": "Romanian Deadlift",
+          "targetSets": 2,
+          "targetRepsMin": 8,
+          "targetRepsMax": 10
+        }
+      ]
+    }
+  ]
+}
