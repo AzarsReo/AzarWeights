@@ -86,6 +86,7 @@ enum ProgressCalculator {
     static func metrics(for sessionExercises: [SessionExercise], displayUnit: WeightUnit = .lbs) -> [SessionMetrics] {
         sessionExercises.compactMap { se in
             guard let session = se.session else { return nil }
+            guard se.exercise?.isCardio != true else { return nil }
             let working = se.workingSets
             guard !working.isEmpty else { return nil }
 

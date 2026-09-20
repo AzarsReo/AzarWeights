@@ -3,13 +3,23 @@ import SwiftData
 
 /// Loads bundled `PresetData.json` into SwiftData on first launch.
 enum SeedDataService {
-    static let currentSeedVersion = 1
+    static let currentSeedVersion = 2
 
     static func seedIfNeeded(in container: ModelContainer) {
         let defaults = UserDefaults.standard
         let context = ModelContext(container)
+        let storedVersion = defaults.integer(forKey: SettingsKeys.seedVersion)
 
         if defaults.bool(forKey: SettingsKeys.hasSeededPresetData) {
+            if storedVersion < currentSeedVersion {
+                do {
+                    try migrate(fromVersion: storedVersion, context: context)
+                    try context.save()
+                    defaults.set(currentSeedVersion, forKey: SettingsKeys.seedVersion)
+                } catch {
+                    assertionFailure("Preset migration failed: \(error)")
+                }
+            }
             return
         }
 
@@ -29,6 +39,36 @@ enum SeedDataService {
             defaults.set(currentSeedVersion, forKey: SettingsKeys.seedVersion)
         } catch {
             assertionFailure("Preset seeding failed: \(error)")
+        }
+    }
+
+    private static func migrate(fromVersion: Int, context: ModelContext) throws {
+        guard fromVersion < 2 else { return }
+        let file = try loadPresetFile()
+        let existing = try context.fetch(FetchDescriptor<Exercise>())
+        var byName = Dictionary(uniqueKeysWithValues: existing.map { ($0.name.lowercased(), $0) })
+
+        for dto in file.exercises where dto.movementPattern == MovementPattern.cardio.rawValue {
+            let key = dto.name.lowercased()
+            if byName[key] == nil {
+                let exercise = Exercise(
+                    name: dto.name,
+                    muscleGroup: dto.muscleGroup,
+                    equipment: dto.equipment,
+                    movementPattern: dto.movementPattern,
+                    aliases: dto.aliases ?? [],
+                    isCustom: false
+                )
+                context.insert(exercise)
+                byName[key] = exercise
+            }
+        }
+
+        if let sledPull = byName["sled pull"] {
+            sledPull.name = "Prowler Push"
+            sledPull.muscleGroup = MuscleGroup.cardio.rawValue
+            sledPull.movementPattern = MovementPattern.cardio.rawValue
+            byName["prowler push"] = sledPull
         }
     }
 

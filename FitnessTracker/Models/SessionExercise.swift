@@ -33,6 +33,12 @@ final class SessionExercise {
         workingSets.map(\.weight).max() ?? 0
     }
 
+    var totalCardioSeconds: Int {
+        workingSets.compactMap(\.durationSeconds).reduce(0, +)
+    }
+
+    var isCardio: Bool { exercise?.isCardio == true }
+
     init(
         id: UUID = UUID(),
         order: Int,

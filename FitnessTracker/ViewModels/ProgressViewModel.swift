@@ -48,7 +48,7 @@ final class ProgressViewModel {
         let trainedIDs = Set(
             completed.flatMap(\.exercises).compactMap { $0.exercise?.id }
         )
-        let trained = exercises.filter { trainedIDs.contains($0.id) }
+        let trained = exercises.filter { trainedIDs.contains($0.id) && !$0.isCardio }
 
         alerts = PlateauDetectionService.alerts(
             exercises: trained,

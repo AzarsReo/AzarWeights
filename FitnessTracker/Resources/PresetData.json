@@ -2586,11 +2586,13 @@
       "aliases": []
     },
     {
-      "name": "Sled Pull",
+      "name": "Prowler Push",
       "muscleGroup": "Cardio",
       "equipment": "Other",
-      "movementPattern": "carry",
-      "aliases": []
+      "movementPattern": "cardio",
+      "aliases": [
+        "Sled Push Finisher"
+      ]
     },
     {
       "name": "Assault Bike",
@@ -2598,7 +2600,8 @@
       "equipment": "Machine",
       "movementPattern": "cardio",
       "aliases": [
-        "Air Bike"
+        "Air Bike",
+        "Fan Bike"
       ]
     },
     {
@@ -2614,6 +2617,114 @@
       "equipment": "Bodyweight",
       "movementPattern": "cardio",
       "aliases": []
+    },
+    {
+      "name": "Jacob's Ladder",
+      "muscleGroup": "Cardio",
+      "equipment": "Machine",
+      "movementPattern": "cardio",
+      "aliases": [
+        "Ladder Climber"
+      ]
+    },
+    {
+      "name": "VersaClimber",
+      "muscleGroup": "Cardio",
+      "equipment": "Machine",
+      "movementPattern": "cardio",
+      "aliases": [
+        "Vertical Climber"
+      ]
+    },
+    {
+      "name": "ARC Trainer",
+      "muscleGroup": "Cardio",
+      "equipment": "Machine",
+      "movementPattern": "cardio",
+      "aliases": [
+        "Cybex ARC"
+      ]
+    },
+    {
+      "name": "Lateral Elliptical",
+      "muscleGroup": "Cardio",
+      "equipment": "Machine",
+      "movementPattern": "cardio",
+      "aliases": [
+        "Helix",
+        "Octane"
+      ]
+    },
+    {
+      "name": "Incline Treadmill Walk",
+      "muscleGroup": "Cardio",
+      "equipment": "Machine",
+      "movementPattern": "cardio",
+      "aliases": [
+        "Incline Walk"
+      ]
+    },
+    {
+      "name": "Curved Treadmill",
+      "muscleGroup": "Cardio",
+      "equipment": "Machine",
+      "movementPattern": "cardio",
+      "aliases": [
+        "Woodway",
+        "Manual Treadmill"
+      ]
+    },
+    {
+      "name": "Precor AMT",
+      "muscleGroup": "Cardio",
+      "equipment": "Machine",
+      "movementPattern": "cardio",
+      "aliases": [
+        "Adaptive Motion Trainer"
+      ]
+    },
+    {
+      "name": "Spin Bike",
+      "muscleGroup": "Cardio",
+      "equipment": "Machine",
+      "movementPattern": "cardio",
+      "aliases": [
+        "Indoor Cycle"
+      ]
+    },
+    {
+      "name": "Recumbent Bike",
+      "muscleGroup": "Cardio",
+      "equipment": "Machine",
+      "movementPattern": "cardio",
+      "aliases": []
+    },
+    {
+      "name": "Kettlebell Swing Intervals",
+      "muscleGroup": "Cardio",
+      "equipment": "Kettlebell",
+      "movementPattern": "cardio",
+      "aliases": [
+        "KB Swing Intervals"
+      ]
+    },
+    {
+      "name": "Medicine Ball Slam Intervals",
+      "muscleGroup": "Cardio",
+      "equipment": "Medicine Ball",
+      "movementPattern": "cardio",
+      "aliases": [
+        "Ball Slam Intervals"
+      ]
+    },
+    {
+      "name": "Box Step-Ups",
+      "muscleGroup": "Cardio",
+      "equipment": "Bodyweight",
+      "movementPattern": "cardio",
+      "aliases": [
+        "Step Ups"
+      ]
     }
   ],
   "splits": [

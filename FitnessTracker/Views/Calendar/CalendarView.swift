@@ -44,7 +44,6 @@ struct CalendarView: View {
                     NavigationStack {
                         DayDetailView(
                             date: selectedDay,
-                            sessions: sessionsOn(selectedDay),
                             customTemplates: customTemplates,
                             splitTemplates: activeSplits.first?.orderedTemplates ?? []
                         )

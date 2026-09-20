@@ -14,12 +14,21 @@ final class SetLog {
     /// `"lbs"` or `"kg"`.
     var weightUnit: String
     var reps: Int
+    /// Logged duration for cardio exercises (`nil` for strength sets).
+    var durationSeconds: Int?
     var isWarmup: Bool
     var completedAt: Date?
 
     var sessionExercise: SessionExercise?
 
     var volume: Double { weight * Double(reps) }
+
+    var durationMinutes: Int {
+        get { max(0, (durationSeconds ?? 0) / 60) }
+        set { durationSeconds = newValue > 0 ? newValue * 60 : nil }
+    }
+
+    var hasLoggedDuration: Bool { (durationSeconds ?? 0) > 0 }
 
     var unit: WeightUnit {
         get { WeightUnit(rawValue: weightUnit) ?? .lbs }
@@ -38,6 +47,7 @@ final class SetLog {
         weight: Double,
         weightUnit: String = WeightUnit.lbs.rawValue,
         reps: Int,
+        durationSeconds: Int? = nil,
         isWarmup: Bool = false,
         completedAt: Date? = .now,
         sessionExercise: SessionExercise? = nil
@@ -47,6 +57,7 @@ final class SetLog {
         self.weight = weight
         self.weightUnit = weightUnit
         self.reps = reps
+        self.durationSeconds = durationSeconds
         self.isWarmup = isWarmup
         self.completedAt = completedAt
         self.sessionExercise = sessionExercise

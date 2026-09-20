@@ -7,15 +7,23 @@ struct DayDetailView: View {
     @Environment(\.dismiss) private var dismiss
     @AppStorage(SettingsKeys.weightUnit) private var weightUnitRaw = WeightUnit.lbs.rawValue
 
+    @Query(sort: \WorkoutSession.checkedInAt, order: .reverse)
+    private var allSessions: [WorkoutSession]
+
     var date: Date = .now
-    var sessions: [WorkoutSession] = []
     var customTemplates: [WorkoutTemplate] = []
     var splitTemplates: [WorkoutTemplate] = []
 
     @State private var sessionVM = SessionViewModel()
     @State private var showStartPicker = false
+    @State private var sessionToDelete: WorkoutSession?
 
+    private let calendar = Calendar.current
     private var weightUnit: WeightUnit { WeightUnit(rawValue: weightUnitRaw) ?? .lbs }
+
+    private var sessions: [WorkoutSession] {
+        allSessions.filter { calendar.isDate($0.checkedInAt, inSameDayAs: date) }
+    }
 
     var body: some View {
         Group {
@@ -32,6 +40,27 @@ struct DayDetailView: View {
             ToolbarItem(placement: .cancellationAction) {
                 Button("Close") { dismiss() }
             }
+        }
+        .confirmationDialog(
+            "Delete this workout?",
+            isPresented: Binding(
+                get: { sessionToDelete != nil },
+                set: { if !$0 { sessionToDelete = nil } }
+            ),
+            titleVisibility: .visible
+        ) {
+            Button("Delete Workout", role: .destructive) {
+                if let sessionToDelete {
+                    modelContext.delete(sessionToDelete)
+                    try? modelContext.save()
+                }
+                sessionToDelete = nil
+            }
+            Button("Cancel", role: .cancel) {
+                sessionToDelete = nil
+            }
+        } message: {
+            Text("This removes the session and all logged sets from your history.")
         }
         .sheet(isPresented: $showStartPicker) {
             NavigationStack {
@@ -114,30 +143,32 @@ struct DayDetailView: View {
                     } else if session.status == .inProgress {
                         labeled("Started", session.checkedInAt.formatted(date: .omitted, time: .shortened))
                     }
-                    labeled(
-                        "Volume",
-                        String(format: "%.0f %@", session.totalVolume, weightUnit.abbreviation)
-                    )
+                    if session.totalVolume > 0 {
+                        labeled(
+                            "Volume",
+                            String(format: "%.0f %@", session.totalVolume, weightUnit.abbreviation)
+                        )
+                    } else if session.totalCardioSeconds > 0 {
+                        labeled("Cardio", CardioFormat.minutesLabel(session.totalCardioSeconds))
+                    }
 
                     ForEach(session.orderedExercises, id: \.id) { se in
                         VStack(alignment: .leading, spacing: 4) {
                             Text(se.exercise?.name ?? "Exercise")
                                 .font(.subheadline.weight(.semibold))
                             ForEach(se.orderedSets, id: \.id) { set in
-                                Text(
-                                    String(
-                                        format: "Set %d · %.0f %@ × %d",
-                                        set.setNumber,
-                                        set.unit.convert(set.weight, to: weightUnit),
-                                        weightUnit.abbreviation,
-                                        set.reps
-                                    )
-                                )
-                                .font(.caption)
-                                .foregroundStyle(.secondary)
+                                Text(SetLogFormat.line(for: set, weightUnit: weightUnit))
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
                             }
                         }
                         .padding(.vertical, 2)
+                    }
+
+                    Button(role: .destructive) {
+                        sessionToDelete = session
+                    } label: {
+                        Label("Delete Workout", systemImage: "trash")
                     }
                 }
                 .listRowBackground(GymTheme.card)

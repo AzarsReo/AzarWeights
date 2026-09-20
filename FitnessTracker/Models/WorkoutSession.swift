@@ -38,6 +38,10 @@ final class WorkoutSession {
         }
     }
 
+    var totalCardioSeconds: Int {
+        exercises.reduce(0) { $0 + $1.totalCardioSeconds }
+    }
+
     init(
         id: UUID = UUID(),
         checkedInAt: Date = .now,

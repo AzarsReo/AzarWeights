@@ -482,7 +482,7 @@ add("Lying Neck Extension", "Neck", "Other", "pull", [])
 add("Prone Neck Bridge", "Neck", "Bodyweight", "core", [])
 add("Supine Neck Bridge", "Neck", "Bodyweight", "core", [])
 
-# --- Cardio ---
+# --- Cardio (duration logged by user at workout time) ---
 add("Rowing Machine", "Cardio", "Machine", "cardio", ["Erg", "Concept2"])
 add("Stationary Bike", "Cardio", "Machine", "cardio", ["Exercise Bike"])
 add("Treadmill Run", "Cardio", "Machine", "cardio", [])
@@ -490,10 +490,22 @@ add("Elliptical", "Cardio", "Machine", "cardio", [])
 add("Stair Climber", "Cardio", "Machine", "cardio", ["Stairmaster"])
 add("Jump Rope", "Cardio", "Other", "cardio", ["Skipping Rope"])
 add("Battle Ropes", "Cardio", "Other", "cardio", [])
-add("Sled Pull", "Cardio", "Other", "carry", [])
-add("Assault Bike", "Cardio", "Machine", "cardio", ["Air Bike"])
+add("Prowler Push", "Cardio", "Other", "cardio", ["Sled Push Finisher"])
+add("Assault Bike", "Cardio", "Machine", "cardio", ["Air Bike", "Fan Bike"])
 add("SkiErg", "Cardio", "Machine", "cardio", [])
 add("Burpees", "Cardio", "Bodyweight", "cardio", [])
+add("Jacob's Ladder", "Cardio", "Machine", "cardio", ["Ladder Climber"])
+add("VersaClimber", "Cardio", "Machine", "cardio", ["Vertical Climber"])
+add("ARC Trainer", "Cardio", "Machine", "cardio", ["Cybex ARC"])
+add("Lateral Elliptical", "Cardio", "Machine", "cardio", ["Helix", "Octane"])
+add("Incline Treadmill Walk", "Cardio", "Machine", "cardio", ["Incline Walk"])
+add("Curved Treadmill", "Cardio", "Machine", "cardio", ["Woodway", "Manual Treadmill"])
+add("Precor AMT", "Cardio", "Machine", "cardio", ["Adaptive Motion Trainer"])
+add("Spin Bike", "Cardio", "Machine", "cardio", ["Indoor Cycle"])
+add("Recumbent Bike", "Cardio", "Machine", "cardio", [])
+add("Kettlebell Swing Intervals", "Cardio", "Kettlebell", "cardio", ["KB Swing Intervals"])
+add("Medicine Ball Slam Intervals", "Cardio", "Medicine Ball", "cardio", ["Ball Slam Intervals"])
+add("Box Step-Ups", "Cardio", "Bodyweight", "cardio", ["Step Ups"])
 
 
 def slot(name: str, sets: int, lo: int, hi: int, rest: int | None = None) -> dict:

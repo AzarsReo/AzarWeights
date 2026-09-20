@@ -29,6 +29,9 @@ final class Exercise {
     var equipmentEnum: EquipmentType? { EquipmentType(rawValue: equipment) }
     var movementPatternEnum: MovementPattern? { MovementPattern(rawValue: movementPattern) }
 
+    /// Duration-based logging (minutes entered at workout time), not weight/reps.
+    var isCardio: Bool { movementPatternEnum == .cardio }
+
     init(
         id: UUID = UUID(),
         name: String,

@@ -88,7 +88,7 @@ enum PlateauDetectionService {
         var results: [Alert] = []
         var plateauByGroup: [MuscleGroup: [String]] = [:]
 
-        for exercise in exercises {
+        for exercise in exercises where !exercise.isCardio {
             let ses = ProgressCalculator.completedSessionExercises(for: exercise, in: sessions)
             let metrics = ProgressCalculator.metrics(for: ses, displayUnit: displayUnit)
             let status = status(from: metrics)

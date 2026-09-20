@@ -136,28 +136,25 @@ struct LiftDetailView: View {
                     )
                 ) {
                     ForEach(se.orderedSets, id: \.id) { set in
-                        Text(
-                            String(
-                                format: "Set %d · %.0f %@ × %d%@",
-                                set.setNumber,
-                                set.unit.convert(set.weight, to: weightUnit),
-                                weightUnit.abbreviation,
-                                set.reps,
-                                set.isWarmup ? " (W)" : ""
-                            )
-                        )
-                        .font(.caption)
-                        .foregroundStyle(.secondary)
-                        .padding(.vertical, 2)
+                        Text(SetLogFormat.line(for: set, weightUnit: weightUnit) + (set.isWarmup ? " (W)" : ""))
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                            .padding(.vertical, 2)
                     }
                 } label: {
                     HStack {
                         Text((se.session?.checkedInAt ?? .now).formatted(date: .abbreviated, time: .omitted))
                             .font(.subheadline.weight(.semibold))
                         Spacer()
-                        Text(String(format: "%.0f vol", ProgressCalculator.volumeLoad(for: se)))
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
+                        if se.isCardio, se.totalCardioSeconds > 0 {
+                            Text(CardioFormat.minutesLabel(se.totalCardioSeconds))
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        } else {
+                            Text(String(format: "%.0f vol", ProgressCalculator.volumeLoad(for: se)))
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        }
                     }
                 }
                 .padding(12)

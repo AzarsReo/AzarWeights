@@ -38,10 +38,16 @@ struct TemplateBuilderView: View {
                             .font(.caption)
                             .foregroundStyle(.secondary)
 
-                        HStack(spacing: 16) {
-                            stepperField("Sets", value: $draft.targetSets, range: 1...10)
-                            stepperField("Min reps", value: $draft.targetRepsMin, range: 1...30)
-                            stepperField("Max reps", value: $draft.targetRepsMax, range: 1...30)
+                        if draft.isCardio {
+                            Text("Duration is entered during the workout.")
+                                .font(.caption)
+                                .foregroundStyle(.secondary)
+                        } else {
+                            HStack(spacing: 16) {
+                                stepperField("Sets", value: $draft.targetSets, range: 1...10)
+                                stepperField("Min reps", value: $draft.targetRepsMin, range: 1...30)
+                                stepperField("Max reps", value: $draft.targetRepsMax, range: 1...30)
+                            }
                         }
                     }
                     .padding(.vertical, 6)
@@ -126,9 +132,10 @@ struct TemplateBuilderView: View {
                                 exerciseID: exercise.id,
                                 exerciseName: exercise.name,
                                 muscleGroup: exercise.muscleGroup,
-                                targetSets: 3,
-                                targetRepsMin: 8,
-                                targetRepsMax: 12
+                                isCardio: exercise.isCardio,
+                                targetSets: exercise.isCardio ? 1 : 3,
+                                targetRepsMin: exercise.isCardio ? 0 : 8,
+                                targetRepsMax: exercise.isCardio ? 0 : 12
                             )
                         )
                         showExercisePicker = false
@@ -179,6 +186,7 @@ struct TemplateBuilderView: View {
                 exerciseID: exercise.id,
                 exerciseName: exercise.name,
                 muscleGroup: exercise.muscleGroup,
+                isCardio: exercise.isCardio,
                 targetSets: te.targetSets,
                 targetRepsMin: te.targetRepsMin,
                 targetRepsMax: te.targetRepsMax
@@ -214,11 +222,12 @@ struct TemplateBuilderView: View {
 
         for (index, draft) in draftExercises.enumerated() {
             let exercise = allExercises.first { $0.id == draft.exerciseID }
-            let minReps = min(draft.targetRepsMin, draft.targetRepsMax)
-            let maxReps = max(draft.targetRepsMin, draft.targetRepsMax)
+            let sets = draft.isCardio ? 1 : draft.targetSets
+            let minReps = draft.isCardio ? 0 : min(draft.targetRepsMin, draft.targetRepsMax)
+            let maxReps = draft.isCardio ? 0 : max(draft.targetRepsMin, draft.targetRepsMax)
             let te = TemplateExercise(
                 order: index,
-                targetSets: draft.targetSets,
+                targetSets: sets,
                 targetRepsMin: minReps,
                 targetRepsMax: maxReps,
                 template: template,
@@ -237,6 +246,7 @@ struct DraftExercise: Identifiable, Hashable {
     var exerciseID: UUID
     var exerciseName: String
     var muscleGroup: String
+    var isCardio: Bool
     var targetSets: Int
     var targetRepsMin: Int
     var targetRepsMax: Int

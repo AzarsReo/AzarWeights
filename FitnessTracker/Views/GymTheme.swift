@@ -44,6 +44,32 @@ enum WeekdayLabel {
     }
 }
 
+enum CardioFormat {
+    static func minutesLabel(_ totalSeconds: Int) -> String {
+        let minutes = max(0, totalSeconds / 60)
+        return minutes == 1 ? "1 min" : "\(minutes) min"
+    }
+
+    static func setLabel(minutes: Int) -> String {
+        minutes == 1 ? "1 minute" : "\(minutes) minutes"
+    }
+}
+
+enum SetLogFormat {
+    static func line(for set: SetLog, weightUnit: WeightUnit) -> String {
+        if set.hasLoggedDuration {
+            return "Set \(set.setNumber) · \(CardioFormat.minutesLabel(set.durationSeconds ?? 0))"
+        }
+        return String(
+            format: "Set %d · %.0f %@ × %d",
+            set.setNumber,
+            set.unit.convert(set.weight, to: weightUnit),
+            weightUnit.abbreviation,
+            set.reps
+        )
+    }
+}
+
 enum DurationFormat {
     static func string(from interval: TimeInterval) -> String {
         let total = Int(interval)
