@@ -31,11 +31,9 @@ final class WorkoutSession {
         exercises.sorted { $0.order < $1.order }
     }
 
-    /// Working-set volume in the units stored on each `SetLog`.
-    var totalVolume: Double {
-        exercises.reduce(0) { partial, sessionExercise in
-            partial + sessionExercise.workingVolume
-        }
+    /// Strength volume for logged working sets, converted to `unit`.
+    func totalVolume(in unit: WeightUnit) -> Double {
+        ProgressCalculator.sessionVolume(self, in: unit)
     }
 
     var totalCardioSeconds: Int {

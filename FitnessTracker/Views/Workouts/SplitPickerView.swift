@@ -9,6 +9,7 @@ struct SplitPickerView: View {
 
     @State private var selected: WorkoutSplit?
     @State private var weekdayAssignments: [UUID: Int] = [:]
+    @State private var showingSplitBuilder = false
 
     private let weekdaySymbols = Calendar.current.veryShortWeekdaySymbols
 
@@ -81,6 +82,13 @@ struct SplitPickerView: View {
         .background(GymTheme.background.ignoresSafeArea())
         .navigationTitle("Workout Split")
         .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button {
+                    showingSplitBuilder = true
+                } label: {
+                    Label("New Split", systemImage: "plus")
+                }
+            }
             ToolbarItem(placement: .confirmationAction) {
                 Button("Save") {
                     applySelection()
@@ -89,6 +97,9 @@ struct SplitPickerView: View {
                 .disabled(selected == nil && activeSplit == nil)
                 .fontWeight(.semibold)
             }
+        }
+        .sheet(isPresented: $showingSplitBuilder) {
+            SplitBuilderView()
         }
         .onAppear {
             selected = splits.first(where: \.isActive)

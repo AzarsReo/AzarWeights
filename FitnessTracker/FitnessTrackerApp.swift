@@ -36,8 +36,10 @@ private struct RootView: View {
         Group {
             if hasCompletedOnboarding {
                 MainTabView()
+                    .azarArcWatermark(aboveTabBar: true)
             } else {
                 OnboardingView()
+                    .azarArcWatermark()
             }
         }
         .animation(.easeInOut(duration: 0.25), value: hasCompletedOnboarding)

@@ -94,6 +94,7 @@ struct HomeView: View {
                 NavigationStack {
                     SettingsView()
                 }
+                .azarArcWatermark()
             }
             .sheet(isPresented: $showingTemplatePicker) {
                 templatePicker
@@ -239,6 +240,7 @@ struct HomeView: View {
                 }
             }
         }
+        .azarArcWatermark()
         .presentationDetents([.medium, .large])
     }
 

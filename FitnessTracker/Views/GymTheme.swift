@@ -60,13 +60,17 @@ enum SetLogFormat {
         if set.hasLoggedDuration {
             return "Set \(set.setNumber) · \(CardioFormat.minutesLabel(set.durationSeconds ?? 0))"
         }
-        return String(
+        var line = String(
             format: "Set %d · %.0f %@ × %d",
             set.setNumber,
             set.unit.convert(set.weight, to: weightUnit),
             weightUnit.abbreviation,
             set.reps
         )
+        if let rpe = set.rpe, (1...10).contains(rpe) {
+            line += " · RPE \(rpe)"
+        }
+        return line
     }
 }
 
@@ -80,5 +84,41 @@ enum DurationFormat {
             return String(format: "%dh %02dm", hours, minutes)
         }
         return String(format: "%d:%02d", minutes, seconds)
+    }
+}
+
+/// Subtle Azar Arc trademark watermark shown on app screens.
+struct AzarArcWatermark: View {
+    var body: some View {
+        HStack(alignment: .firstTextBaseline, spacing: 1) {
+            Text("Azar Arc")
+                .font(.system(size: 11, weight: .bold))
+                .tracking(0.9)
+            Text("™")
+                .font(.system(size: 7, weight: .bold))
+                .baselineOffset(3)
+        }
+        .foregroundStyle(Color.white.opacity(0.22))
+        .allowsHitTesting(false)
+        .accessibilityHidden(true)
+    }
+}
+
+private struct AzarArcWatermarkModifier: ViewModifier {
+    var aboveTabBar: Bool = false
+
+    func body(content: Content) -> some View {
+        content.overlay(alignment: .bottomTrailing) {
+            AzarArcWatermark()
+                .padding(.trailing, 12)
+                .padding(.bottom, aboveTabBar ? 54 : 10)
+        }
+    }
+}
+
+extension View {
+    /// Overlays a small Azar Arc™ watermark in the bottom-trailing corner.
+    func azarArcWatermark(aboveTabBar: Bool = false) -> some View {
+        modifier(AzarArcWatermarkModifier(aboveTabBar: aboveTabBar))
     }
 }

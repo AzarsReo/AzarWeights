@@ -71,6 +71,9 @@ struct ProgressOverviewView: View {
             }
             .onAppear { refresh() }
             .onChange(of: weightUnitRaw) { _, _ in refresh() }
+            .onReceive(NotificationCenter.default.publisher(for: WorkoutDataChange.notification)) { _ in
+                refresh()
+            }
         }
     }
 
