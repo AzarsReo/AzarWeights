@@ -14,7 +14,6 @@ struct DayDetailView: View {
     var customTemplates: [WorkoutTemplate] = []
     var splitTemplates: [WorkoutTemplate] = []
 
-    @State private var sessionVM = SessionViewModel()
     @State private var showStartPicker = false
     @State private var sessionToDelete: WorkoutSession?
 
@@ -34,6 +33,7 @@ struct DayDetailView: View {
             }
         }
         .background(GymTheme.background.ignoresSafeArea())
+        .azarArcWatermark()
         .navigationTitle(date.formatted(date: .abbreviated, time: .omitted))
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
@@ -53,6 +53,7 @@ struct DayDetailView: View {
                 if let sessionToDelete {
                     modelContext.delete(sessionToDelete)
                     try? modelContext.save()
+                    WorkoutDataChange.notify()
                 }
                 sessionToDelete = nil
             }
@@ -91,6 +92,7 @@ struct DayDetailView: View {
                     }
                 }
             }
+            .azarArcWatermark()
             .presentationDetents([.medium])
         }
     }
@@ -143,10 +145,10 @@ struct DayDetailView: View {
                     } else if session.status == .inProgress {
                         labeled("Started", session.checkedInAt.formatted(date: .omitted, time: .shortened))
                     }
-                    if session.totalVolume > 0 {
+                    if session.totalVolume(in: weightUnit) > 0 {
                         labeled(
                             "Volume",
-                            String(format: "%.0f %@", session.totalVolume, weightUnit.abbreviation)
+                            String(format: "%.0f %@", session.totalVolume(in: weightUnit), weightUnit.abbreviation)
                         )
                     } else if session.totalCardioSeconds > 0 {
                         labeled("Cardio", CardioFormat.minutesLabel(session.totalCardioSeconds))
@@ -194,17 +196,34 @@ struct DayDetailView: View {
         )
         modelContext.insert(session)
         try? modelContext.save()
+        WorkoutDataChange.notify()
         dismiss()
     }
 
     private func logPast(template: WorkoutTemplate) {
         showStartPicker = false
-        sessionVM.checkIn(template: template, context: modelContext, weightUnit: weightUnit, now: date)
-        if let session = sessionVM.session {
-            session.checkedOutAt = date.addingTimeInterval(3600)
-            session.status = .completed
-            try? modelContext.save()
+        let session = WorkoutSession(
+            checkedInAt: date,
+            checkedOutAt: date.addingTimeInterval(3600),
+            status: .completed,
+            template: template
+        )
+        modelContext.insert(session)
+
+        for templateExercise in template.orderedExercises {
+            let sessionExercise = SessionExercise(
+                order: templateExercise.order,
+                plannedSets: templateExercise.targetSets,
+                plannedRepsMin: templateExercise.targetRepsMin,
+                plannedRepsMax: templateExercise.targetRepsMax,
+                session: session,
+                exercise: templateExercise.exercise
+            )
+            modelContext.insert(sessionExercise)
         }
+
+        try? modelContext.save()
+        WorkoutDataChange.notify()
         dismiss()
     }
 }

@@ -1,51 +1,85 @@
-# Fitness Tracker
+# Azar Weights (Fitness Tracker)
 
-Native iOS workout logger built with SwiftUI and SwiftData. Data stays on device — no account or backend for MVP.
+Local-first iOS workout app — SwiftUI + SwiftData. Track sessions, manage splits/templates, and view strength progress.
 
-## Open in Xcode
+## Stack
 
-This Cursor folder **is** the Xcode project. No copying or re-importing files.
+| Layer | Tech |
+|---|---|
+| UI | SwiftUI (iOS 17+) |
+| Persistence | SwiftData |
+| Charts | Swift Charts |
+| Auth | Sign in with Apple + Google Sign-In |
+| Identity | Keychain + UserDefaults |
+| Presets | `PresetData.json` via `SeedDataService` |
 
-```bash
-open FitnessTracker.xcodeproj
-```
+**Pattern:** MVVM-ish — Views + 2 ViewModels + stateless Services. No repository layer yet.
 
-Or in Xcode: **File → Open** → select `FitnessTracker.xcodeproj` in this folder.
-
-Then pick an iPhone simulator or your device and press **Cmd+R**.
-
-## Requirements
-
-- Xcode 15+ (iOS 17 / SwiftData)
-- An Apple Developer account (free tier is enough to run on your own iPhone)
-- [XcodeGen](https://github.com/yonaskolb/XcodeGen) only if you change `project.yml`: `brew install xcodegen`
-
-## Regenerating the Xcode project
-
-New Swift files under `FitnessTracker/` are picked up automatically the next time you open or build in Xcode (source globs). Re-run XcodeGen only when `project.yml` changes (targets, frameworks, build settings):
-
-```bash
-xcodegen generate
-```
-
-## Project layout
+## App Flow
 
 ```
-.
-├── project.yml                    # XcodeGen source of truth
-├── FitnessTracker.xcodeproj/      # Generated Xcode project (committed)
-├── FitnessTracker/                # App source
-│   ├── FitnessTrackerApp.swift
-│   ├── Models/
-│   ├── Views/
-│   ├── ViewModels/
-│   ├── Services/
-│   └── Resources/
-│       ├── PresetData.json        # Exercise library, splits, starter templates
-│       └── Assets.xcassets
-└── FitnessTrackerTests/
+Launch → SeedDataService → RootView
+  ├─ Onboarding (first run: pick split, assign days)
+  └─ MainTabView (4 tabs)
+       ├─ Home     → SignIn gate → Dashboard → Active Session
+       ├─ Workouts → Templates, split picker, builder
+       ├─ Calendar → Month view → Day detail
+       └─ Progress → Lift trends, heatmap, plateaus
 ```
 
-## Weight units
+## Data Model
 
-Default is **pounds (lbs)**. Toggle to kilograms in Settings. Key: `settings.weightUnit` (`lbs` | `kg`).
+```
+WorkoutSplit
+  └─ WorkoutTemplate (split day | starter | custom)
+       └─ TemplateExercise → Exercise
+
+WorkoutSession (one gym visit)
+  └─ SessionExercise (snapshot of template slot)
+       └─ SetLog (weight, reps, RPE, cardio duration)
+```
+
+**Key rule:** Templates are blueprints. Sessions are immutable history — editing a template never rewrites past logs.
+
+## Layers
+
+| Folder | Role |
+|---|---|
+| `Models/` | SwiftData `@Model` types, domain enums |
+| `ViewModels/` | `SessionViewModel`, `ProgressViewModel` |
+| `Services/` | `ProgressCalculator`, `PlateauDetectionService`, `SeedDataService`, `AuthService` |
+| `Views/` | Feature folders: Home, Workouts, Calendar, Progress, Onboarding, Settings |
+
+## Core Loops
+
+**Session:** `HomeView` → `checkIn(template)` → `ActiveSessionView` → log sets → `checkOut()` → optional save-as-template
+
+**Planning:** `WorkoutsView` → build/edit templates → start from Home or Workouts
+
+**Analytics:** `ProgressViewModel.refresh()` → `ProgressCalculator` + `PlateauDetectionService` → charts & alerts
+
+## Auth (current)
+
+- Home tab gates on sign-in (`SignInView` / `AuthService`)
+- Account stored in Keychain — **workout data is still local-only, not user-scoped in SwiftData**
+
+## Direction
+
+| Now | Next |
+|---|---|
+| Local SwiftData persistence | Cloud sync per user |
+| Template → session → set model | `ownerId` on models |
+| Auth gate on Home | Multi-device account model |
+| Direct `@Query` / `ModelContext` access | Repository layer |
+| Session UX (RPE, swap, save) | Fix session edge-case bugs |
+
+## Project Layout
+
+```
+FitnessTracker/
+├── Models/          # SwiftData entities + enums
+├── ViewModels/      # Session + Progress orchestration
+├── Services/        # Domain logic, seeding, auth
+├── Views/           # SwiftUI screens (by feature tab)
+└── Resources/       # PresetData.json, Assets, Info.plist
+```

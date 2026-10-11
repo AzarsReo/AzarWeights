@@ -51,6 +51,9 @@ struct LiftDetailView: View {
         .navigationBarTitleDisplayMode(.inline)
         .onAppear { reload() }
         .onChange(of: weightUnitRaw) { _, _ in reload() }
+        .onReceive(NotificationCenter.default.publisher(for: WorkoutDataChange.notification)) { _ in
+            reload()
+        }
     }
 
     private var header: some View {
@@ -135,7 +138,7 @@ struct LiftDetailView: View {
                         set: { expandedSessionID = $0 ? se.id : nil }
                     )
                 ) {
-                    ForEach(se.orderedSets, id: \.id) { set in
+                    ForEach(se.loggedWorkingSets, id: \.id) { set in
                         Text(SetLogFormat.line(for: set, weightUnit: weightUnit) + (set.isWarmup ? " (W)" : ""))
                             .font(.caption)
                             .foregroundStyle(.secondary)
@@ -151,7 +154,7 @@ struct LiftDetailView: View {
                                 .font(.caption)
                                 .foregroundStyle(.secondary)
                         } else {
-                            Text(String(format: "%.0f vol", ProgressCalculator.volumeLoad(for: se)))
+                            Text(String(format: "%.0f vol", ProgressCalculator.volumeLoad(for: se, displayUnit: weightUnit)))
                                 .font(.caption)
                                 .foregroundStyle(.secondary)
                         }

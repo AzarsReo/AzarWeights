@@ -6,9 +6,12 @@ struct ExercisePickerSheet: View {
     @Environment(\.dismiss) private var dismiss
 
     @Query(sort: \Exercise.name) private var allExercises: [Exercise]
+    @State private var showingNewExercise = false
 
     var title: String = "Choose Exercise"
     var excludingExerciseID: UUID?
+    /// Pre-selects the muscle filter (e.g. when swapping for a similar movement).
+    var initialMuscleFilter: MuscleGroup?
     var onSelect: (Exercise) -> Void
 
     @State private var searchText = ""
@@ -47,6 +50,25 @@ struct ExercisePickerSheet: View {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Cancel") { dismiss() }
                 }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        showingNewExercise = true
+                    } label: {
+                        Label("New Exercise", systemImage: "plus")
+                    }
+                }
+            }
+            .azarArcWatermark()
+            .sheet(isPresented: $showingNewExercise) {
+                ExerciseEditorSheet { created in
+                    onSelect(created)
+                    dismiss()
+                }
+            }
+        }
+        .onAppear {
+            if muscleFilter == nil {
+                muscleFilter = initialMuscleFilter
             }
         }
     }

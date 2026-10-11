@@ -47,7 +47,7 @@ struct ActiveSessionView: View {
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Finish") {
-                        viewModel.checkOut(context: modelContext)
+                        viewModel.checkOut(context: modelContext, weightUnit: weightUnit)
                     }
                     .fontWeight(.semibold)
                     .foregroundStyle(GymTheme.accent)
@@ -69,8 +69,9 @@ struct ActiveSessionView: View {
         }
         .sheet(item: $swapTarget) { target in
             ExercisePickerSheet(
-                title: "Swap Exercise",
-                excludingExerciseID: target.exercise?.id
+                title: "Replace \(target.exercise?.name ?? "Exercise")",
+                excludingExerciseID: target.exercise?.id,
+                initialMuscleFilter: target.exercise?.muscleGroupEnum
             ) { newExercise in
                 viewModel.swapExercise(
                     target,
@@ -91,8 +92,8 @@ struct ActiveSessionView: View {
                         systemImage: "timer"
                     )
                     Spacer()
-                    if session.totalVolume > 0 {
-                        Text(String(format: "%.0f %@", session.totalVolume, weightUnit.abbreviation))
+                    if session.totalVolume(in: weightUnit) > 0 {
+                        Text(String(format: "%.0f %@", session.totalVolume(in: weightUnit), weightUnit.abbreviation))
                             .foregroundStyle(.secondary)
                     } else if session.totalCardioSeconds > 0 {
                         Text(CardioFormat.minutesLabel(session.totalCardioSeconds))
@@ -120,58 +121,74 @@ struct ActiveSessionView: View {
         )
 
         return Section {
-            Button {
-                withAnimation {
-                    expandedExerciseID = isExpanded ? nil : sessionExercise.id
-                }
-            } label: {
-                HStack {
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text(sessionExercise.exercise?.name ?? "Exercise")
-                            .font(.headline)
-                            .foregroundStyle(.primary)
-                        HStack(spacing: 8) {
-                            if isCardio {
-                                Text("Enter duration when you log")
-                                    .font(.caption)
-                                    .foregroundStyle(.secondary)
-                            } else {
-                                Text("\(sessionExercise.plannedSets)×\(sessionExercise.plannedRepsMin)–\(sessionExercise.plannedRepsMax)")
-                                    .font(.caption)
-                                    .foregroundStyle(.secondary)
-                            }
-                            if let ghost {
-                                Text(ghost)
-                                    .font(.caption)
-                                    .foregroundStyle(.tertiary)
+            HStack(spacing: 8) {
+                Button {
+                    withAnimation {
+                        expandedExerciseID = isExpanded ? nil : sessionExercise.id
+                    }
+                } label: {
+                    HStack {
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(sessionExercise.exercise?.name ?? "Exercise")
+                                .font(.headline)
+                                .foregroundStyle(.primary)
+                            HStack(spacing: 8) {
+                                if isCardio {
+                                    Text("Enter duration when you log")
+                                        .font(.caption)
+                                        .foregroundStyle(.secondary)
+                                } else {
+                                    Text("\(sessionExercise.plannedSets)×\(sessionExercise.plannedRepsMin)–\(sessionExercise.plannedRepsMax)")
+                                        .font(.caption)
+                                        .foregroundStyle(.secondary)
+                                }
+                                if let ghost {
+                                    Text(ghost)
+                                        .font(.caption)
+                                        .foregroundStyle(.tertiary)
+                                }
                             }
                         }
+                        Spacer()
+                        Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
+                            .foregroundStyle(.secondary)
                     }
-                    Spacer()
-                    Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
-                        .foregroundStyle(.secondary)
+                    .padding(.vertical, 4)
                 }
-                .padding(.vertical, 4)
-            }
-            .listRowBackground(GymTheme.card)
+                .buttonStyle(.plain)
 
-            if isExpanded {
                 Button {
                     swapTarget = sessionExercise
                 } label: {
-                    Label("Swap Exercise", systemImage: "arrow.triangle.2.circlepath")
-                        .font(.subheadline.weight(.semibold))
+                    Image(systemName: "arrow.triangle.2.circlepath")
+                        .font(.body.weight(.semibold))
                         .foregroundStyle(GymTheme.info)
+                        .frame(width: 36, height: 36)
+                        .background(GymTheme.cardElevated, in: Circle())
                 }
-                .listRowBackground(GymTheme.card)
+                .buttonStyle(.plain)
+                .accessibilityLabel("Replace \(sessionExercise.exercise?.name ?? "exercise")")
+            }
+            .listRowBackground(GymTheme.card)
+            .contextMenu {
+                Button {
+                    swapTarget = sessionExercise
+                } label: {
+                    Label(
+                        "Replace \(sessionExercise.exercise?.name ?? "Exercise")",
+                        systemImage: "arrow.triangle.2.circlepath"
+                    )
+                }
+            }
 
+            if isExpanded {
                 ForEach(sessionExercise.orderedSets, id: \.id) { set in
                     if isCardio {
-                        cardioSetRow(set)
+                        cardioSetRow(set, sessionExercise: sessionExercise)
                             .listRowBackground(GymTheme.cardElevated)
                     } else {
                         strengthSetRow(set, sessionExercise: sessionExercise)
-                            .listRowBackground(GymTheme.cardElevated)
+                            .listRowBackground(strengthSetRowBackground(set, sessionExercise: sessionExercise))
                     }
                 }
 
@@ -188,7 +205,7 @@ struct ActiveSessionView: View {
         }
     }
 
-    private func cardioSetRow(_ set: SetLog) -> some View {
+    private func cardioSetRow(_ set: SetLog, sessionExercise: SessionExercise) -> some View {
         @Bindable var set = set
         return VStack(alignment: .leading, spacing: 10) {
             HStack {
@@ -225,8 +242,7 @@ struct ActiveSessionView: View {
                 Spacer()
 
                 Button {
-                    guard set.durationMinutes > 0 else { return }
-                    viewModel.markSetComplete(set)
+                    viewModel.markSetComplete(set, for: sessionExercise)
                 } label: {
                     Text(set.completedAt == nil ? "Log" : "Done")
                         .font(.subheadline.weight(.bold))
@@ -239,10 +255,36 @@ struct ActiveSessionView: View {
                         .foregroundStyle(.black)
                 }
                 .buttonStyle(.plain)
-                .disabled(set.durationMinutes == 0 && set.completedAt == nil)
+                .disabled(set.completedAt == nil && !set.isValidToLog(isCardio: true))
             }
         }
         .padding(.vertical, 6)
+    }
+
+    @ViewBuilder
+    private func strengthSetRowBackground(_ set: SetLog, sessionExercise: SessionExercise) -> some View {
+        let ghostSets = viewModel.previousWorkingSets(for: sessionExercise.exercise, context: modelContext)
+        let ghost = ghostSets.first { $0.setNumber == set.setNumber }
+        let previousInSession = sessionExercise.previousLoggedWorkingSet(before: set)
+        let regressed = set.completedAt != nil
+            && set.isRegression(
+                previousInSession: previousInSession,
+                ghostSet: ghost,
+                displayUnit: weightUnit
+            )
+
+        if regressed {
+            ZStack {
+                GymTheme.cardElevated
+                LinearGradient(
+                    colors: [GymTheme.danger.opacity(0.25), Color.clear],
+                    startPoint: .leading,
+                    endPoint: .trailing
+                )
+            }
+        } else {
+            GymTheme.cardElevated
+        }
     }
 
     private func strengthSetRow(_ set: SetLog, sessionExercise: SessionExercise) -> some View {
@@ -311,10 +353,10 @@ struct ActiveSessionView: View {
                         .background(GymTheme.card, in: RoundedRectangle(cornerRadius: 8))
                 }
 
-                Spacer()
+                rpeField(for: set)
 
                 Button {
-                    viewModel.markSetComplete(set)
+                    viewModel.markSetComplete(set, for: sessionExercise)
                 } label: {
                     Text(set.completedAt == nil ? "Log" : "Done")
                         .font(.subheadline.weight(.bold))
@@ -327,6 +369,7 @@ struct ActiveSessionView: View {
                         .foregroundStyle(.black)
                 }
                 .buttonStyle(.plain)
+                .disabled(set.completedAt == nil && !set.isValidToLog(isCardio: false))
             }
         }
         .padding(.vertical, 6)
@@ -412,6 +455,30 @@ struct ActiveSessionView: View {
             Button("Cancel", role: .cancel) {}
         } message: {
             Text("Save this workout to My Workouts so you can run it again anytime.")
+        }
+    }
+
+    private func rpeField(for set: SetLog) -> some View {
+        @Bindable var set = set
+        return VStack(alignment: .leading, spacing: 4) {
+            Text("RPE")
+                .font(.caption2)
+                .foregroundStyle(.secondary)
+            Menu {
+                ForEach(1...10, id: \.self) { value in
+                    Button("\(value)") { set.rpe = value }
+                }
+                if set.rpe != nil {
+                    Button("Clear", role: .destructive) { set.rpe = nil }
+                }
+            } label: {
+                Text(set.rpe.map(String.init) ?? "—")
+                    .font(.title3.monospacedDigit().weight(.semibold))
+                    .foregroundStyle(set.rpe == nil ? .secondary : .primary)
+                    .frame(width: 44)
+                    .padding(.vertical, 8)
+                    .background(GymTheme.card, in: RoundedRectangle(cornerRadius: 8))
+            }
         }
     }
 

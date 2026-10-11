@@ -56,16 +56,42 @@ enum ProgressCalculator {
         return weight * (1 + Double(reps) / 30.0)
     }
 
-    static func volumeLoad(for sessionExercise: SessionExercise) -> Double {
-        sessionExercise.workingVolume
+    static func setVolume(_ set: SetLog, in displayUnit: WeightUnit) -> Double {
+        let weight = set.unit.convert(set.weight, to: displayUnit)
+        return weight * Double(set.reps)
     }
 
-    static func peakLoad(for sessionExercise: SessionExercise) -> Double {
-        sessionExercise.peakLoad
+    static func sessionExerciseVolume(_ sessionExercise: SessionExercise, in displayUnit: WeightUnit) -> Double {
+        sessionExercise.loggedWorkingSets.reduce(0) { partial, set in
+            partial + setVolume(set, in: displayUnit)
+        }
     }
 
-    static func bestEstimatedOneRepMax(for sessionExercise: SessionExercise) -> Double {
-        sessionExercise.workingSets.map(\.estimatedOneRepMax).max() ?? 0
+    static func sessionExercisePeakLoad(_ sessionExercise: SessionExercise, in displayUnit: WeightUnit) -> Double {
+        sessionExercise.loggedWorkingSets
+            .map { $0.unit.convert($0.weight, to: displayUnit) }
+            .max() ?? 0
+    }
+
+    static func sessionVolume(_ session: WorkoutSession, in displayUnit: WeightUnit) -> Double {
+        session.exercises.reduce(0) { partial, sessionExercise in
+            partial + sessionExerciseVolume(sessionExercise, in: displayUnit)
+        }
+    }
+
+    static func volumeLoad(for sessionExercise: SessionExercise, displayUnit: WeightUnit = .lbs) -> Double {
+        sessionExerciseVolume(sessionExercise, in: displayUnit)
+    }
+
+    static func peakLoad(for sessionExercise: SessionExercise, displayUnit: WeightUnit = .lbs) -> Double {
+        sessionExercisePeakLoad(sessionExercise, in: displayUnit)
+    }
+
+    static func bestEstimatedOneRepMax(for sessionExercise: SessionExercise, displayUnit: WeightUnit = .lbs) -> Double {
+        sessionExercise.loggedWorkingSets.map { set in
+            let weight = set.unit.convert(set.weight, to: displayUnit)
+            return estimatedOneRepMax(weight: weight, reps: set.reps)
+        }.max() ?? 0
     }
 
     /// Session exercises for a given lift, oldest → newest, completed sessions only.
@@ -87,7 +113,7 @@ enum ProgressCalculator {
         sessionExercises.compactMap { se in
             guard let session = se.session else { return nil }
             guard se.exercise?.isCardio != true else { return nil }
-            let working = se.workingSets
+            let working = se.loggedWorkingSets
             guard !working.isEmpty else { return nil }
 
             var peak = 0.0
@@ -98,11 +124,10 @@ enum ProgressCalculator {
             var endurance = 0
 
             for set in working {
-                let unit = set.unit
-                let weight = unit.convert(set.weight, to: displayUnit)
+                let weight = set.unit.convert(set.weight, to: displayUnit)
                 let e1rm = estimatedOneRepMax(weight: weight, reps: set.reps)
                 peak = max(peak, weight)
-                volume += weight * Double(set.reps)
+                volume += setVolume(set, in: displayUnit)
                 bestE1RM = max(bestE1RM, e1rm)
                 switch set.reps {
                 case 1...5: strength += 1
@@ -229,10 +254,7 @@ enum ProgressCalculator {
             .flatMap(\.exercises)
             .filter { $0.exercise?.muscleGroup == group.rawValue }
             .reduce(0.0) { partial, se in
-                partial + se.workingSets.reduce(0.0) { sum, set in
-                    let weight = set.unit.convert(set.weight, to: displayUnit)
-                    return sum + weight * Double(set.reps)
-                }
+                partial + sessionExerciseVolume(se, in: displayUnit)
             }
     }
 
@@ -252,12 +274,7 @@ enum ProgressCalculator {
             .filter { $0.status == .completed }
             .filter { $0.checkedInAt >= start && $0.checkedInAt < end }
             .reduce(0.0) { partial, session in
-                partial + session.exercises.reduce(0.0) { sum, se in
-                    sum + se.workingSets.reduce(0.0) { inner, set in
-                        let weight = set.unit.convert(set.weight, to: displayUnit)
-                        return inner + weight * Double(set.reps)
-                    }
-                }
+                partial + sessionVolume(session, in: displayUnit)
             }
     }
 }

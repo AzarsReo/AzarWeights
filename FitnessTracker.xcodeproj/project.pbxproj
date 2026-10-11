@@ -13,16 +13,18 @@
 		290923E5AEC0DA0B0EB6D97B /* TemplateExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E379414A037674DBF471C8 /* TemplateExercise.swift */; };
 		304E82819AE24BE4EA2E31F5 /* SessionExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40A059845CD94F48620BC50 /* SessionExercise.swift */; };
 		41D0C70724DBEC7ABB13BA5B /* SessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED207A2D5A6EC0C373073C1F /* SessionViewModel.swift */; };
+		4425AB9710CEEBAD8B309A17 /* ExerciseEditorSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C3CED4C0B8C49EFDE6A664 /* ExerciseEditorSheet.swift */; };
 		4C24865DA4DBA216B207EB0E /* WorkoutTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F662F562E7CD211454BAEBD /* WorkoutTemplate.swift */; };
 		4C37FE933557B6A819C7BFF3 /* MuscleGroupDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AC947BB84EE8B0279A880E /* MuscleGroupDetailView.swift */; };
 		514B1348090F4D73D9529954 /* FitnessTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764D5875D448532B5218C3A2 /* FitnessTrackerTests.swift */; };
 		68AE6668B25C6ED8CD9E0698 /* PlateauAlertCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1884523E7ECB690C1B3B1D /* PlateauAlertCard.swift */; };
+		6D0168846B131B10BD58ACA3 /* SplitBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46124EB2B81E91AB1634B1D /* SplitBuilderView.swift */; };
 		6E1663B6460A9ED9900B71C1 /* PresetData.json in Resources */ = {isa = PBXBuildFile; fileRef = 56EFF181161B72CD782F4EAA /* PresetData.json */; };
 		715C9204E83170BA3C504CD8 /* FitnessTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3452DC341DA1EA42DC3B2D /* FitnessTrackerApp.swift */; };
-		7249DFB5305FA1C800735E39 /* File.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7249DFB4305FA1C800735E39 /* File.txt */; };
 		7E852F25FB76ED4415FAC3DC /* E1RMTrendChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A05164E86A4832C735D047E /* E1RMTrendChart.swift */; };
 		800E8B97149F4C5EEE45E28A /* MuscleHeatmapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D12E16DD9057AF81871DF44 /* MuscleHeatmapView.swift */; };
 		87044DC45BA98DA840482767 /* RepRangeChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9144025437036B111E3B8D15 /* RepRangeChart.swift */; };
+		8DCE1A18F9F540C76CF72D79 /* File.txt in Resources */ = {isa = PBXBuildFile; fileRef = EFDA0C6355DE0B8ABC225363 /* File.txt */; };
 		97E71FB5DBFC463DB193D88C /* PlateauDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BACFA6BB811B382532A5037B /* PlateauDetectionService.swift */; };
 		990F2315032F42EEB266DCED /* FitnessTrackerSchema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267483E1E52E14DFA91784CC /* FitnessTrackerSchema.swift */; };
 		9A527A1616501D96F5431301 /* SetLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 243BCED4F17B65FB0FF0332D /* SetLog.swift */; };
@@ -38,6 +40,7 @@
 		B47394FE6342F8D65BB4E2C5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B039214A1A6FD52A1DF5CAF9 /* HomeView.swift */; };
 		B94336B8FB25EC6F6604CB33 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8081A88EAEEC8AB89A1087 /* OnboardingView.swift */; };
 		BE4079FBCD742063BB03D0AB /* GymTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E32AC86BD9EA002468F222 /* GymTheme.swift */; };
+		C3222D28E89E07050498D6C6 /* WorkoutDataChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51CD1E535ED33AAE026C78C /* WorkoutDataChange.swift */; };
 		C51E396FCC4A58B9412FECDC /* WorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4912503469444E21ADA64348 /* WorkoutsView.swift */; };
 		C598E6991C42C515DC99EF0C /* StarterTemplatesDrawer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC38F3A66956C364D79C7CB8 /* StarterTemplatesDrawer.swift */; };
 		E0AE56EAC22C21FFE9BD7605 /* WorkoutSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828C64ECD63030D49695BE7C /* WorkoutSplit.swift */; };
@@ -81,9 +84,9 @@
 		57D4E5A5E2AA14E06A9B8A14 /* TemplateBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateBuilderView.swift; sourceTree = "<group>"; };
 		5A05164E86A4832C735D047E /* E1RMTrendChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = E1RMTrendChart.swift; sourceTree = "<group>"; };
 		5F7B098BDE2110D121D24D9A /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		66C3CED4C0B8C49EFDE6A664 /* ExerciseEditorSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseEditorSheet.swift; sourceTree = "<group>"; };
 		68E32AC86BD9EA002468F222 /* GymTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymTheme.swift; sourceTree = "<group>"; };
 		6D12E16DD9057AF81871DF44 /* MuscleHeatmapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleHeatmapView.swift; sourceTree = "<group>"; };
-		7249DFB4305FA1C800735E39 /* File.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = File.txt; sourceTree = "<group>"; };
 		764D5875D448532B5218C3A2 /* FitnessTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessTrackerTests.swift; sourceTree = "<group>"; };
 		828C64ECD63030D49695BE7C /* WorkoutSplit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSplit.swift; sourceTree = "<group>"; };
 		8ABA78143727FC737EC6853F /* ProgressOverviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressOverviewView.swift; sourceTree = "<group>"; };
@@ -98,12 +101,15 @@
 		BACFA6BB811B382532A5037B /* PlateauDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateauDetectionService.swift; sourceTree = "<group>"; };
 		BDBA99C101BE44E96F0E421C /* ProgressStatusBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressStatusBadge.swift; sourceTree = "<group>"; };
 		C07F606B225E36241D5879E0 /* FitnessTrackerTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FitnessTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C51CD1E535ED33AAE026C78C /* WorkoutDataChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDataChange.swift; sourceTree = "<group>"; };
 		C58548AB1C2EEBF473BD2109 /* ActiveSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveSessionView.swift; sourceTree = "<group>"; };
 		CD99D461F3D1921282B3FC32 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		D2B628F1D23A4E823D5E963A /* FitnessTracker.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FitnessTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF703007A6711953096662A0 /* SeedDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeedDataService.swift; sourceTree = "<group>"; };
+		E46124EB2B81E91AB1634B1D /* SplitBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitBuilderView.swift; sourceTree = "<group>"; };
 		E8AC947BB84EE8B0279A880E /* MuscleGroupDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleGroupDetailView.swift; sourceTree = "<group>"; };
 		ED207A2D5A6EC0C373073C1F /* SessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionViewModel.swift; sourceTree = "<group>"; };
+		EFDA0C6355DE0B8ABC225363 /* File.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = File.txt; sourceTree = "<group>"; };
 		FC1884523E7ECB690C1B3B1D /* PlateauAlertCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlateauAlertCard.swift; sourceTree = "<group>"; };
 		FD3452DC341DA1EA42DC3B2D /* FitnessTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitnessTrackerApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,7 +155,9 @@
 		221EA4B1F49F989D19BC2521 /* Workouts */ = {
 			isa = PBXGroup;
 			children = (
+				66C3CED4C0B8C49EFDE6A664 /* ExerciseEditorSheet.swift */,
 				4905DD3B3CC9FB40214E6B62 /* ExercisePickerSheet.swift */,
+				E46124EB2B81E91AB1634B1D /* SplitBuilderView.swift */,
 				52BA06AC44D81F53A18BA471 /* SplitPickerView.swift */,
 				AC38F3A66956C364D79C7CB8 /* StarterTemplatesDrawer.swift */,
 				57D4E5A5E2AA14E06A9B8A14 /* TemplateBuilderView.swift */,
@@ -193,7 +201,7 @@
 			children = (
 				CD99D461F3D1921282B3FC32 /* CalendarView.swift */,
 				54302C4F946B86648B895430 /* DayDetailView.swift */,
-				7249DFB4305FA1C800735E39 /* File.txt */,
+				EFDA0C6355DE0B8ABC225363 /* File.txt */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -262,6 +270,7 @@
 				BACFA6BB811B382532A5037B /* PlateauDetectionService.swift */,
 				B735AE85578B919A151CC2F6 /* ProgressCalculator.swift */,
 				DF703007A6711953096662A0 /* SeedDataService.swift */,
+				C51CD1E535ED33AAE026C78C /* WorkoutDataChange.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -348,6 +357,7 @@
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					203AEC6FEA796870AF1BA6AD = {
+						DevelopmentTeam = L3A2S4A693;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -378,8 +388,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F04FF73ADFA10500EB2A30F8 /* Assets.xcassets in Resources */,
+				8DCE1A18F9F540C76CF72D79 /* File.txt in Resources */,
 				6E1663B6460A9ED9900B71C1 /* PresetData.json in Resources */,
-				7249DFB5305FA1C800735E39 /* File.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +406,7 @@
 				A515EA2EAD16E59DD9A9BA0E /* DomainEnums.swift in Sources */,
 				7E852F25FB76ED4415FAC3DC /* E1RMTrendChart.swift in Sources */,
 				201BF3BDC461FBA374D0CB67 /* Exercise.swift in Sources */,
+				4425AB9710CEEBAD8B309A17 /* ExerciseEditorSheet.swift in Sources */,
 				F312128D31ECCABC3E76FA99 /* ExercisePickerSheet.swift in Sources */,
 				715C9204E83170BA3C504CD8 /* FitnessTrackerApp.swift in Sources */,
 				990F2315032F42EEB266DCED /* FitnessTrackerSchema.swift in Sources */,
@@ -418,11 +429,13 @@
 				41D0C70724DBEC7ABB13BA5B /* SessionViewModel.swift in Sources */,
 				9A527A1616501D96F5431301 /* SetLog.swift in Sources */,
 				9F7B6EB7775DD00021648E66 /* SettingsView.swift in Sources */,
+				6D0168846B131B10BD58ACA3 /* SplitBuilderView.swift in Sources */,
 				0A5CD513FA2C38963BDB450E /* SplitPickerView.swift in Sources */,
 				C598E6991C42C515DC99EF0C /* StarterTemplatesDrawer.swift in Sources */,
 				EB4120EB114F3E6A7BC89439 /* TemplateBuilderView.swift in Sources */,
 				290923E5AEC0DA0B0EB6D97B /* TemplateExercise.swift in Sources */,
 				EAFB9068CFDC2A016A83420E /* VolumeLoadChart.swift in Sources */,
+				C3222D28E89E07050498D6C6 /* WorkoutDataChange.swift in Sources */,
 				EB656377A49E6E0151318DD3 /* WorkoutSession.swift in Sources */,
 				E0AE56EAC22C21FFE9BD7605 /* WorkoutSplit.swift in Sources */,
 				4C24865DA4DBA216B207EB0E /* WorkoutTemplate.swift in Sources */,
@@ -474,6 +487,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3A2S4A693;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTABILITY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -489,7 +503,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fitnesstracker.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Azarfitnesstracker.app;
 				PRODUCT_NAME = FitnessTracker;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -545,7 +559,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -564,6 +578,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3A2S4A693;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_TESTABILITY = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -579,7 +594,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.fitnesstracker.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Azarfitnesstracker.app;
 				PRODUCT_NAME = FitnessTracker;
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -659,7 +674,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;

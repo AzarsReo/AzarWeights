@@ -116,7 +116,11 @@ enum SessionStatus: String, Codable, CaseIterable, Identifiable {
     }
 }
 
-/// Strength trend labels produced by `PlateauDetectionService` (Progress tab).
+/// Strength trend label for a single lift, computed by `PlateauDetectionService` from
+/// recent peak load, volume, and e1RM, and shown on the Progress tab. Cases run best to
+/// worst: improving (`gettingStronger`, `buildingCapacity`), stalling (`plateauing`,
+/// `confirmedPlateau`), declining (`takingADip`), or `insufficientData` when there isn't
+/// enough history yet.
 enum ProgressStatus: String, Codable, CaseIterable, Identifiable {
     case gettingStronger
     case buildingCapacity

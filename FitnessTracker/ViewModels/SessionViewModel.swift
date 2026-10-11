@@ -75,20 +75,14 @@ final class SessionViewModel {
         workoutSaveCompleted = false
     }
 
-    func checkOut(context: ModelContext, now: Date = .now) {
+    func checkOut(context: ModelContext, weightUnit: WeightUnit = .lbs, now: Date = .now) {
         guard let session else { return }
         session.checkedOutAt = now
         session.status = .completed
 
-        for exercise in session.orderedExercises {
-            for set in exercise.orderedSets where set.completedAt == nil && (set.weight > 0 || set.reps > 0 || set.hasLoggedDuration) {
-                set.completedAt = now
-            }
-        }
-
         summaryDuration = now.timeIntervalSince(session.checkedInAt)
-        summaryVolume = session.totalVolume
-        summaryPRCount = countNewPRs(session: session, context: context)
+        summaryVolume = session.totalVolume(in: weightUnit)
+        summaryPRCount = countNewPRs(session: session, context: context, displayUnit: weightUnit)
         shouldOfferSaveWorkout = !startedFromCustomTemplate || sessionStructureModified
         if let sourceName = session.template?.name, !startedFromCustomTemplate {
             suggestedWorkoutName = "My \(sourceName)"
@@ -97,6 +91,7 @@ final class SessionViewModel {
         }
 
         try? context.save()
+        WorkoutDataChange.notify()
         showSummary = true
     }
 
@@ -155,6 +150,7 @@ final class SessionViewModel {
             weight: last?.weight ?? 0,
             weightUnit: weightUnit.rawValue,
             reps: last?.reps ?? sessionExercise.plannedRepsMin,
+            rpe: last?.rpe,
             isWarmup: false,
             completedAt: nil,
             sessionExercise: sessionExercise
@@ -177,6 +173,7 @@ final class SessionViewModel {
         guard let session else { return }
         context.delete(session)
         try? context.save()
+        WorkoutDataChange.notify()
         self.session = nil
         showSummary = false
     }
@@ -249,11 +246,18 @@ final class SessionViewModel {
         }
     }
 
-    func markSetComplete(_ set: SetLog, now: Date = .now) {
+    @discardableResult
+    func markSetComplete(
+        _ set: SetLog,
+        for sessionExercise: SessionExercise,
+        now: Date = .now
+    ) -> Bool {
+        guard set.isValidToLog(isCardio: sessionExercise.isCardio) else { return false }
         set.completedAt = now
         #if canImport(UIKit)
         UIImpactFeedbackGenerator(style: .medium).impactOccurred()
         #endif
+        return true
     }
 
     /// Ghost values from the most recent completed session for this exercise.
@@ -267,9 +271,8 @@ final class SessionViewModel {
         guard let sessions = try? context.fetch(descriptor) else { return [] }
         for session in sessions {
             if let match = session.orderedExercises.first(where: { $0.exercise?.id == exerciseID }) {
-                let working = match.workingSets.filter { $0.completedAt != nil }
-                if !working.isEmpty { return working }
-                if !match.workingSets.isEmpty { return match.workingSets }
+                let logged = match.loggedWorkingSets
+                if !logged.isEmpty { return logged }
             }
         }
         return []
@@ -287,17 +290,22 @@ final class SessionViewModel {
         return String(format: "Last: %.0f %@ × %d", weight, unit.abbreviation, best.reps)
     }
 
-    private func countNewPRs(session: WorkoutSession, context: ModelContext) -> Int {
+    private func countNewPRs(
+        session: WorkoutSession,
+        context: ModelContext,
+        displayUnit: WeightUnit
+    ) -> Int {
         var count = 0
         for se in session.orderedExercises {
             guard let exercise = se.exercise, !exercise.isCardio else { continue }
+            guard !se.loggedWorkingSets.isEmpty else { continue }
             let history = ProgressCalculator.completedSessionExercises(for: exercise, in: fetchCompleted(context: context))
                 .filter { $0.session?.id != session.id }
-            let priorMetrics = ProgressCalculator.metrics(for: history)
+            let priorMetrics = ProgressCalculator.metrics(for: history, displayUnit: displayUnit)
             let priorBest = priorMetrics.map(\.peakLoad).max() ?? 0
             let priorE1RM = priorMetrics.map(\.estimatedOneRepMax).max() ?? 0
-            let currentPeak = ProgressCalculator.peakLoad(for: se)
-            let currentE1RM = ProgressCalculator.bestEstimatedOneRepMax(for: se)
+            let currentPeak = ProgressCalculator.peakLoad(for: se, displayUnit: displayUnit)
+            let currentE1RM = ProgressCalculator.bestEstimatedOneRepMax(for: se, displayUnit: displayUnit)
             if currentPeak > priorBest && priorBest > 0 { count += 1 }
             else if priorBest == 0 && currentPeak > 0 { count += 1 }
             if currentE1RM > priorE1RM && priorE1RM > 0 { count += 1 }

@@ -14,7 +14,7 @@ settings:
     IPHONEOS_DEPLOYMENT_TARGET: "17.0"
     TARGETED_DEVICE_FAMILY: "1,2"
     CURRENT_PROJECT_VERSION: 1
-    MARKETING_VERSION: "1.0"
+    MARKETING_VERSION: "1.1"
     ENABLE_USER_SCRIPT_SANDBOXING: YES
 targets:
   FitnessTracker:
@@ -27,7 +27,7 @@ targets:
           - "**/.DS_Store"
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.fitnesstracker.app
+        PRODUCT_BUNDLE_IDENTIFIER: com.Azarfitnesstracker.app
         PRODUCT_NAME: FitnessTracker
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_CFBundleDisplayName: Fitness Tracker
@@ -42,6 +42,7 @@ targets:
         SWIFT_EMIT_LOC_STRINGS: YES
         TARGETED_DEVICE_FAMILY: "1,2"
         CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: L3A2S4A693
         ENABLE_PREVIEWS: YES
         ENABLE_TESTABILITY: YES
     dependencies:
