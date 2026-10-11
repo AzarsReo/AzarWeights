@@ -12,6 +12,7 @@ struct WorkoutsView: View {
     private var starterTemplates: [WorkoutTemplate]
 
     @State private var showSplitPicker = false
+    @State private var showSplitBuilder = false
     @State private var builderSource: WorkoutTemplate?
     @State private var showBuilder = false
     @State private var startersExpanded = false
@@ -40,6 +41,9 @@ struct WorkoutsView: View {
                     onSelect: { starter in
                         builderSource = starter
                         showBuilder = true
+                    },
+                    onCreateSplit: {
+                        showSplitBuilder = true
                     }
                 )
             }
@@ -57,6 +61,9 @@ struct WorkoutsView: View {
             }
             .navigationDestination(isPresented: $showSplitPicker) {
                 SplitPickerView()
+            }
+            .sheet(isPresented: $showSplitBuilder) {
+                SplitBuilderView()
             }
             .navigationDestination(isPresented: $showBuilder) {
                 TemplateBuilderView(sourceTemplate: builderSource)

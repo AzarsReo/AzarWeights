@@ -6,6 +6,7 @@ struct StarterTemplatesDrawer: View {
     var templates: [WorkoutTemplate]
     @Binding var isExpanded: Bool
     var onSelect: (WorkoutTemplate) -> Void
+    var onCreateSplit: () -> Void
 
     var body: some View {
         VStack(spacing: 0) {
@@ -58,6 +59,29 @@ struct StarterTemplatesDrawer: View {
                             }
                             .buttonStyle(.plain)
                         }
+
+                        Button {
+                            onCreateSplit()
+                        } label: {
+                            VStack(alignment: .leading, spacing: 8) {
+                                Image(systemName: "plus.circle.fill")
+                                    .font(.title2)
+                                    .foregroundStyle(GymTheme.accent)
+                                Text("Create Your Own Split")
+                                    .font(.headline)
+                                    .foregroundStyle(.primary)
+                                Text("Build a personal routine")
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                            }
+                            .padding(14)
+                            .frame(width: 160, height: 110, alignment: .leading)
+                            .background(
+                                RoundedRectangle(cornerRadius: 14)
+                                    .strokeBorder(GymTheme.accent.opacity(0.6), style: StrokeStyle(lineWidth: 1.5, dash: [6]))
+                            )
+                        }
+                        .buttonStyle(.plain)
                     }
                     .padding(.horizontal, 20)
                     .padding(.bottom, 20)
@@ -85,6 +109,6 @@ struct StarterTemplatesDrawer: View {
 }
 
 #Preview {
-    StarterTemplatesDrawer(templates: [], isExpanded: .constant(true), onSelect: { _ in })
+    StarterTemplatesDrawer(templates: [], isExpanded: .constant(true), onSelect: { _ in }, onCreateSplit: {})
         .preferredColorScheme(.dark)
 }

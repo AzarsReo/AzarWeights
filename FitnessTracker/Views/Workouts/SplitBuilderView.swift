@@ -67,7 +67,6 @@ struct SplitBuilderView: View {
                     .listRowBackground(GymTheme.card)
                 }
             }
-            .environment(\.editMode, .constant(.active))
             .scrollContentBackground(.hidden)
             .background(GymTheme.background.ignoresSafeArea())
             .navigationTitle("New Split")
@@ -76,7 +75,10 @@ struct SplitBuilderView: View {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Cancel") { dismiss() }
                 }
-                ToolbarItem(placement: .confirmationAction) {
+                ToolbarItemGroup(placement: .confirmationAction) {
+                    if !days.isEmpty {
+                        EditButton()
+                    }
                     Button("Save") { save() }
                         .disabled(!canSave)
                         .fontWeight(.semibold)

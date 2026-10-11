@@ -60,10 +60,10 @@ struct ExercisePickerSheet: View {
             }
             .azarArcWatermark()
             .sheet(isPresented: $showingNewExercise) {
-                ExerciseEditorSheet { created in
-                    onSelect(created)
-                    dismiss()
-                }
+                // Editor only creates + saves and dismisses itself. The new exercise
+                // then appears in this list (via @Query) for the user to tap — avoids
+                // dismissing this picker while the editor sheet is still presented.
+                ExerciseEditorSheet()
             }
         }
         .onAppear {

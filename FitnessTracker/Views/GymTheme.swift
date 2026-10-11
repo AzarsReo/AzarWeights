@@ -1,14 +1,16 @@
 import SwiftUI
 
 /// Shared dark gym-friendly tokens used across MVP screens.
+/// Mapped onto the shared brand palette in `Theme.swift`
+/// (black background, grey cards, purple accent).
 enum GymTheme {
-    static let background = Color(red: 0.07, green: 0.08, blue: 0.10)
-    static let card = Color(red: 0.12, green: 0.13, blue: 0.16)
-    static let cardElevated = Color(red: 0.16, green: 0.18, blue: 0.22)
-    static let accent = Color(red: 0.30, green: 0.85, blue: 0.55)
-    static let warning = Color(red: 0.95, green: 0.70, blue: 0.25)
-    static let danger = Color(red: 0.95, green: 0.35, blue: 0.35)
-    static let info = Color(red: 0.35, green: 0.65, blue: 0.95)
+    static let background = Color.appBackground
+    static let card = Color.cardDarkGrey
+    static let cardElevated = Color.midGrey
+    static let accent = Color.brandPurple
+    static let warning = Color.statusGold
+    static let danger = Color.statusRed
+    static let info = Color.macroProtein
 
     static func statusColor(_ status: ProgressStatus) -> Color {
         switch status {
